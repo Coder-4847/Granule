@@ -91,7 +91,6 @@ Phase 3 is complete. Phase 2 measurements above remain historical where explicit
 
 Phase 4 implementation and its separate evidence are recorded above. Historical Phase 2/3 measurements are retained for traceability.
 
-
 ## GitHub Pages publication — 6 October 2026
 
-Publication authorized to Coder-4847/Granule. Release lint, nine unit tests, and production build pass. Initial push and Pages deployment are being performed; earlier no-publication statements above describe the historical phase gates.
+Published to https://coder-4847.github.io/Granule/ from commit 92e8d43. GitHub Actions run 37476581970 completed with successful build and deployment jobs. Release lint, nine unit tests, and production build pass. Live Chrome verification confirmed HTTP 200, a three-star first-level solve, no exposed development API, offline reload, and no browser console errors or warnings. See verification/pages-live.json. Earlier no-publication statements above describe the historical phase gates.

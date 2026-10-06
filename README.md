@@ -1,5 +1,7 @@
 # Granule
 
+**[Play Granule](https://coder-4847.github.io/Granule/)** · [Source](https://github.com/Coder-4847/Granule)
+
 A WebGL2 falling-sand puzzle game built with strict TypeScript and Vite. The game includes **100 core levels and 10 bonus Master levels**, plus an unrestricted sandbox. See [STATUS.md](STATUS.md) for verification and known limits.
 
 ## Run locally
@@ -18,7 +20,7 @@ npm run build
 npm run preview
 ```
 
-Production files are written to `dist/` with relative asset paths. Menus, world selection, results, settings, offline caching, and a Pages workflow are included. Nothing has been pushed or published.
+Production files are written to `dist/` with relative asset paths. Menus, world selection, results, settings, offline caching, and a Pages workflow are included. Published to GitHub Pages on 6 October 2026.
 
 ## Play and experiment
 
@@ -89,7 +91,7 @@ To deploy when you are ready:
 3. Run the included **Build and deploy Granule** workflow, or push to `main`. It uses `npm ci`, lint, unit tests, and the production build before uploading `dist/`.
 4. Visit the Pages URL from the deployment. The same files support a `/repository-name/` subpath or a custom domain.
 
-Pull requests build without deploying. The workflow follows [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). Hosting has not been exercised against a real repository; no remote, push, or publication was performed.
+Pull requests build without deploying. The workflow follows [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). The build and deployment jobs passed on GitHub. The live site passed a three-star first-level solve and offline reload with no browser console errors or warnings.
 
 `LICENSE` is an explicit placeholder. Replace it with your preferred license before inviting reuse.
 
