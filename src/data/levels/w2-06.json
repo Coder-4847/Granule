@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "id": "w2-06",
+  "world": 2,
+  "order": 6,
+  "title": "Water and weight",
+  "lesson": "Compare a liquid receiver with a powder receiver.",
+  "seed": 1206,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [344, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [292, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [344, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [604, 134, 4, 66],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Delivered water: 80 cells",
+      "material": 4,
+      "target": 80,
+      "rect": [296, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Delivered gravel: 80 cells",
+      "material": 12,
+      "target": 80,
+      "rect": [556, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 12],
+    "tools": [0],
+    "budget": 270,
+    "efficient": 210,
+    "radius": 12
+  },
+  "work": [
+    [230, 215, 200, 120],
+    [490, 215, 200, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Compare a liquid receiver with a powder receiver.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. water → gravel.",
+    "Reference outline: water at (320, 260), square radius 5; gravel at (580, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 260],
+        "to": [320, 260],
+        "radius": 5,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 260],
+        "to": [580, 260],
+        "radius": 5,
+        "material": 12,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

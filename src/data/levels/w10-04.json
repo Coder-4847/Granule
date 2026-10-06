@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "id": "w10-04",
+  "world": 10,
+  "order": 4,
+  "title": "Cold demolition",
+  "lesson": "A frozen sample closes the relay. Rebuild the conductor so its pulse can open the protected oil reservoir.",
+  "seed": 2004,
+  "terrain": [
+    {
+      "rect": [120, 250, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [146, 276, 8, 8],
+      "material": 4
+    },
+    {
+      "rect": [220, 280, 270, 4],
+      "material": 19
+    },
+    {
+      "rect": [338, 280, 16, 4],
+      "material": 0
+    },
+    {
+      "rect": [490, 276, 8, 12],
+      "material": 27
+    },
+    {
+      "rect": [636, 146, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [636, 150, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [688, 150, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [640, 150, 48, 12],
+      "material": 4
+    },
+    {
+      "rect": [640, 300, 48, 20],
+      "material": 5
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "cold-relay",
+      "kind": "relay",
+      "rect": [196, 270, 12, 12],
+      "sensor": "ice",
+      "threshold": 32,
+      "latch": true,
+      "output": [219, 282]
+    },
+    {
+      "id": "oil-lock",
+      "kind": "gate",
+      "rect": [640, 294, 48, 6],
+      "sensor": "pressure",
+      "threshold": 2,
+      "latch": true,
+      "channel": "pressure"
+    }
+  ],
+  "goals": [
+    {
+      "id": "ice",
+      "label": "Close the ice switch: 32 ice cells",
+      "rect": [146, 276, 8, 8],
+      "material": 10,
+      "target": 32,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "pressure",
+      "label": "Fire the remote lock",
+      "rect": [486, 272, 24, 24],
+      "material": -1,
+      "target": 2,
+      "channel": "pressure",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "oil",
+      "label": "Float 600 oil cells on the receiving water",
+      "rect": [640, 162, 48, 100],
+      "material": 5,
+      "target": 600,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 19],
+    "tools": [0, 2],
+    "budget": 586,
+    "efficient": 504,
+    "radius": 12
+  },
+  "work": [
+    [110, 240, 80, 80],
+    [330, 272, 32, 20]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "A frozen sample closes the relay. Rebuild the conductor so its pulse can open the protected oil reservoir.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Freeze at (150, 280), square radius 10. Material 19 at (338, 282), square radius 2 to (354, 282)."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [150, 280],
+        "to": [150, 280],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [338, 282],
+        "to": [354, 282],
+        "radius": 2,
+        "material": 19,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

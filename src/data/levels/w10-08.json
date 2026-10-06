@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "id": "w10-08",
+  "world": 10,
+  "order": 8,
+  "title": "Deep quarry",
+  "lesson": "Bridge the conductor, then spark its protected input. The blast-operated sluice releases gravel into a sand-filled sorting chamber.",
+  "seed": 2008,
+  "terrain": [
+    {
+      "rect": [180, 300, 300, 4],
+      "material": 19
+    },
+    {
+      "rect": [314, 300, 16, 4],
+      "material": 0
+    },
+    {
+      "rect": [480, 296, 8, 12],
+      "material": 27
+    },
+    {
+      "rect": [498, 288, 8, 36],
+      "material": 2
+    },
+    {
+      "rect": [646, 136, 60, 4],
+      "material": 1
+    },
+    {
+      "rect": [646, 140, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [702, 140, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [650, 140, 52, 6],
+      "material": 3
+    },
+    {
+      "rect": [650, 320, 52, 20],
+      "material": 12
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "quarry-sluice",
+      "kind": "gate",
+      "rect": [650, 314, 52, 6],
+      "sensor": "blast",
+      "threshold": 2,
+      "latch": true,
+      "channel": "pressure"
+    }
+  ],
+  "goals": [
+    {
+      "id": "repaired-conductor",
+      "label": "Restore all 64 cells of the missing conductor",
+      "rect": [314, 300, 16, 4],
+      "material": 19,
+      "target": 64,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "blast",
+      "label": "Activate the blast-operated sluice",
+      "rect": [480, 290, 24, 28],
+      "material": -1,
+      "target": 2,
+      "channel": "pressure",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "gravel",
+      "label": "Catch 700 gravel cells",
+      "rect": [650, 140, 52, 130],
+      "material": 12,
+      "target": 700,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "sand",
+      "label": "Preserve the 312-cell sand bed",
+      "rect": [650, 140, 52, 130],
+      "material": 3,
+      "target": 300,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [19, 31],
+    "tools": [0],
+    "budget": 103,
+    "efficient": 89,
+    "radius": 12
+  },
+  "work": [
+    [306, 292, 32, 20],
+    [140, 270, 50, 70]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Bridge the conductor, then spark its protected input. The blast-operated sluice releases gravel into a sand-filled sorting chamber.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 19 at (314, 302), square radius 2 to (330, 302). Material 31 at (179, 302), square radius 1."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [314, 302],
+        "to": [330, 302],
+        "radius": 2,
+        "material": 19,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [179, 302],
+        "to": [179, 302],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

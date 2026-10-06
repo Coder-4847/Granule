@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "id": "w6-02",
+  "world": 6,
+  "order": 2,
+  "title": "Salt cellar",
+  "lesson": "Let salt fall into water to produce brine.",
+  "seed": 1602,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [566, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [428, 134, 44, 12],
+      "material": 4
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 15,
+      "target": 8,
+      "rect": [354, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [354, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [478, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Brine mixed: 24 cells",
+      "material": 32,
+      "target": 24,
+      "rect": [426, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [15],
+    "tools": [0],
+    "budget": 195,
+    "efficient": 152,
+    "radius": 12
+  },
+  "work": [[360, 170, 200, 140]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Let salt fall into water to produce brine.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. salt.",
+    "Reference outline: material at (450, 220), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 220],
+        "to": [450, 220],
+        "radius": 6,
+        "material": 15,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "id": "w10-01",
+  "world": 10,
+  "order": 1,
+  "title": "River foundry",
+  "lesson": "Repair the dry conductor, then power the mill. Its remote charge opens the cooling-water sluice above the lava.",
+  "seed": 2001,
+  "terrain": [
+    {
+      "rect": [144, 256, 52, 4],
+      "material": 1
+    },
+    {
+      "rect": [144, 260, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [192, 260, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [220, 260, 250, 4],
+      "material": 19
+    },
+    {
+      "rect": [332, 260, 16, 4],
+      "material": 0
+    },
+    {
+      "rect": [470, 256, 8, 12],
+      "material": 27
+    },
+    {
+      "rect": [606, 146, 60, 4],
+      "material": 1
+    },
+    {
+      "rect": [606, 150, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [662, 150, 4, 240],
+      "material": 1
+    },
+    {
+      "rect": [610, 280, 52, 30],
+      "material": 4
+    },
+    {
+      "rect": [610, 150, 52, 5],
+      "material": 23,
+      "temperature": 1250
+    }
+  ],
+  "sensors": [
+    {
+      "id": "flow-witness",
+      "rect": [610, 160, 52, 80],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "mill",
+      "kind": "wheel",
+      "rect": [200, 252, 14, 20],
+      "sensor": "mill-water",
+      "threshold": 120,
+      "latch": true,
+      "output": [219, 262]
+    },
+    {
+      "id": "coolant-sluice",
+      "kind": "gate",
+      "rect": [610, 274, 52, 6],
+      "sensor": "detonation",
+      "threshold": 2,
+      "latch": true,
+      "channel": "pressure"
+    }
+  ],
+  "goals": [
+    {
+      "id": "mill-water",
+      "label": "Supply 120 water cells to the mill",
+      "rect": [148, 260, 44, 80],
+      "material": 4,
+      "target": 120,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "detonation",
+      "label": "Trigger the remote charge",
+      "rect": [466, 252, 24, 24],
+      "material": -1,
+      "target": 2,
+      "channel": "pressure",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "crust",
+      "label": "Quench at least 30 cells of lava",
+      "rect": [610, 150, 52, 80],
+      "material": 24,
+      "target": 30,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "coolant",
+      "label": "Deliver 200 remaining water cells",
+      "rect": [610, 150, 52, 100],
+      "material": 4,
+      "target": 200,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 19],
+    "tools": [0],
+    "budget": 274,
+    "efficient": 236,
+    "radius": 12
+  },
+  "work": [
+    [100, 320, 180, 90],
+    [324, 252, 32, 20]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Repair the dry conductor, then power the mill. Its remote charge opens the cooling-water sluice above the lava.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 4 at (170, 344), square radius 6. Material 19 at (332, 262), square radius 2 to (348, 262)."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [170, 344],
+        "to": [170, 344],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [332, 262],
+        "to": [348, 262],
+        "radius": 2,
+        "material": 19,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

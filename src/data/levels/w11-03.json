@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "id": "w11-03",
+  "world": 11,
+  "order": 3,
+  "title": "Master: living current",
+  "lesson": "All targets must register together. Grow, conduct, and operate a lever with an efficient shared budget.",
+  "seed": 2103,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [214, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [162, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [214, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [90, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [306, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [188, 134, 4, 8],
+      "material": 18
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [390, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [402, 180, 2, 4],
+      "material": 4
+    },
+    {
+      "rect": [398, 176, 10, 4],
+      "material": 1
+    },
+    {
+      "rect": [398, 184, 10, 4],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [674, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [741, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [741, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [785, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [745, 204, 40, 10],
+      "material": 3
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s2-control",
+      "rect": [634, 194, 40, 35],
+      "material": 3
+    }
+  ],
+  "machines": [
+    {
+      "id": "s2-gate",
+      "kind": "gate",
+      "rect": [745, 200, 40, 4],
+      "sensor": "s2-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s2-motion",
+      "kind": "lever",
+      "rect": [684, 200, 12, 6],
+      "travel": [20, 12],
+      "sensor": "s2-control",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [94, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [94, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [218, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Grow beyond 32 starting cells",
+      "material": 18,
+      "target": 36,
+      "rect": [166, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g4",
+      "label": "Pulse reaches the far contact",
+      "material": -1,
+      "target": 0.1,
+      "rect": [510, 180, 16, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": false
+    },
+    {
+      "id": "s2-g5",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [745, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 31, 3],
+    "tools": [0],
+    "budget": 207,
+    "efficient": 194,
+    "radius": 12
+  },
+  "work": [
+    [100, 170, 200, 140],
+    [360, 170, 65, 60],
+    [620, 240, 80, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Grow, conduct, and operate a lever with an efficient shared budget.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Place a small square of water, radius 3, at (190, 195). Load the sand control cup at (654, 270), radius 6, and place a radius-1 spark at the wire input (389, 182). Avoid submerging the entire plant."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 195],
+        "to": [190, 195],
+        "radius": 3,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [389, 182],
+        "to": [389, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [654, 270],
+        "to": [654, 270],
+        "radius": 6,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

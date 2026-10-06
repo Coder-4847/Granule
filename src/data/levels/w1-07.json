@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "w1-07",
+  "world": 1,
+  "order": 7,
+  "title": "Chisel",
+  "lesson": "The eraser is unlocked here. Cut a small opening in the stone shelf to release the earth above it.",
+  "seed": 1107,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [426, 200, 48, 4],
+      "material": 2
+    },
+    {
+      "rect": [430, 204, 40, 10],
+      "material": 13
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Release 120 cells of earth",
+      "material": 13,
+      "target": 120,
+      "rect": [426, 134, 48, 65],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [3],
+    "tools": [0, 3],
+    "budget": 135,
+    "efficient": 105,
+    "radius": 12
+  },
+  "work": [[440, 196, 20, 12]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "The eraser is unlocked here. Cut a small opening in the stone shelf to release the earth above it.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. dig.",
+    "Reference outline: material at (450, 202), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 202],
+        "to": [450, 202],
+        "radius": 5,
+        "material": 0,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

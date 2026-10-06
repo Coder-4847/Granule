@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "id": "w5-10",
+  "world": 5,
+  "order": 10,
+  "title": "Workshop shift",
+  "lesson": "Sequence the lever, turbine, and float from a shared supply.",
+  "seed": 1510,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [110, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [110, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [154, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [221, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [221, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [265, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [225, 204, 40, 10],
+      "material": 3
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [414, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [446, 192, 100, 4],
+      "material": 19
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [674, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [741, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [741, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [785, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [745, 204, 40, 10],
+      "material": 3
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s0-control",
+      "rect": [114, 194, 40, 35],
+      "material": 3
+    },
+    {
+      "id": "s1-control",
+      "rect": [374, 194, 40, 35],
+      "material": 4
+    },
+    {
+      "id": "s2-control",
+      "rect": [634, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s0-gate",
+      "kind": "gate",
+      "rect": [225, 200, 40, 4],
+      "sensor": "s0-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s0-motion",
+      "kind": "lever",
+      "rect": [164, 200, 12, 6],
+      "travel": [20, 12],
+      "sensor": "s0-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s1-drive",
+      "kind": "turbine",
+      "rect": [428, 188, 12, 12],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true,
+      "output": [445, 194]
+    },
+    {
+      "id": "s2-gate",
+      "kind": "gate",
+      "rect": [745, 200, 40, 4],
+      "sensor": "s2-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s2-motion",
+      "kind": "float",
+      "rect": [684, 200, 12, 6],
+      "travel": [0, 24],
+      "sensor": "s2-control",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [225, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Generator sends current",
+      "material": 19,
+      "target": 0.3,
+      "rect": [522, 192, 20, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [745, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [3, 4],
+    "tools": [0],
+    "budget": 584,
+    "efficient": 454,
+    "radius": 12
+  },
+  "work": [
+    [100, 240, 80, 100],
+    [360, 240, 80, 100],
+    [620, 240, 80, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Sequence the lever, turbine, and float from a shared supply.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. lever → turbine → float.",
+    "Reference outline: sand at (134, 270), square radius 6; water at (394, 270), square radius 6; water at (654, 270), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [134, 270],
+        "to": [134, 270],
+        "radius": 6,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [394, 270],
+        "to": [394, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [654, 270],
+        "to": [654, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "id": "w2-01",
+  "world": 2,
+  "order": 1,
+  "title": "A cup of water",
+  "lesson": "Pour above the walls; liquid will seek the bottom.",
+  "seed": 1201,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 90],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Delivered water: 80 cells",
+      "material": 4,
+      "target": 80,
+      "rect": [426, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 135,
+    "efficient": 105,
+    "radius": 12
+  },
+  "work": [[360, 215, 200, 120]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Pour above the walls; liquid will seek the bottom.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. water.",
+    "Reference outline: water at (450, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 260],
+        "to": [450, 260],
+        "radius": 5,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

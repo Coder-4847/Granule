@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "id": "w10-03",
+  "world": 10,
+  "order": 3,
+  "title": "Salt and smoke",
+  "lesson": "Burn the suspended wooden valve. The falling salt makes brine, which releases a second, protected grain reservoir.",
+  "seed": 2003,
+  "terrain": [
+    {
+      "rect": [276, 166, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [276, 170, 4, 220],
+      "material": 1
+    },
+    {
+      "rect": [328, 170, 4, 220],
+      "material": 1
+    },
+    {
+      "rect": [280, 170, 48, 18],
+      "material": 4
+    },
+    {
+      "rect": [280, 280, 48, 4],
+      "material": 8
+    },
+    {
+      "rect": [280, 284, 48, 16],
+      "material": 15
+    },
+    {
+      "rect": [606, 156, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [606, 160, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [658, 160, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [610, 320, 48, 20],
+      "material": 3
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "grain-sluice",
+      "kind": "gate",
+      "rect": [610, 314, 48, 6],
+      "sensor": "brine",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "brine",
+      "label": "Mix 100 brine cells below the burned valve",
+      "rect": [280, 170, 48, 100],
+      "material": 32,
+      "target": 100,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "valve",
+      "label": "Remove the wooden salt valve",
+      "rect": [280, 280, 48, 4],
+      "material": 8,
+      "target": 0,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": true
+    },
+    {
+      "id": "delivered",
+      "label": "Deliver 600 protected sand cells",
+      "rect": [610, 160, 48, 120],
+      "material": 3,
+      "target": 600,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [8],
+    "tools": [0, 1],
+    "budget": 3514,
+    "efficient": 3024,
+    "radius": 12
+  },
+  "work": [[270, 260, 68, 48]],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Burn the suspended wooden valve. The falling salt makes brine, which releases a second, protected grain reservoir.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Heat at (304, 282), square radius 12."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [304, 282],
+        "to": [304, 282],
+        "radius": 12,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [304, 282],
+        "to": [304, 282],
+        "radius": 12,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [304, 282],
+        "to": [304, 282],
+        "radius": 12,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [304, 282],
+        "to": [304, 282],
+        "radius": 12,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [304, 282],
+        "to": [304, 282],
+        "radius": 12,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

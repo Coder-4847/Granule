@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "w10-09",
+  "world": 10,
+  "order": 9,
+  "title": "Pressure garden",
+  "lesson": "New plant growth trips a relay. Reconnect its wire so the remote blast can release the screened grain supply.",
+  "seed": 2009,
+  "terrain": [
+    {
+      "rect": [146, 206, 52, 4],
+      "material": 1
+    },
+    {
+      "rect": [146, 210, 4, 130],
+      "material": 1
+    },
+    {
+      "rect": [194, 210, 4, 130],
+      "material": 1
+    },
+    {
+      "rect": [170, 210, 4, 8],
+      "material": 18
+    },
+    {
+      "rect": [240, 220, 290, 4],
+      "material": 19
+    },
+    {
+      "rect": [370, 220, 16, 4],
+      "material": 0
+    },
+    {
+      "rect": [530, 216, 8, 12],
+      "material": 27
+    },
+    {
+      "rect": [696, 126, 52, 4],
+      "material": 1
+    },
+    {
+      "rect": [696, 130, 4, 260],
+      "material": 1
+    },
+    {
+      "rect": [744, 130, 4, 260],
+      "material": 1
+    },
+    {
+      "rect": [700, 320, 44, 20],
+      "material": 3
+    },
+    {
+      "rect": [700, 230, 15, 4],
+      "material": 1
+    },
+    {
+      "rect": [729, 230, 15, 4],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "growth-relay",
+      "kind": "relay",
+      "rect": [216, 210, 12, 12],
+      "sensor": "growth",
+      "threshold": 40,
+      "latch": true,
+      "output": [239, 222]
+    },
+    {
+      "id": "grain-lock",
+      "kind": "gate",
+      "rect": [700, 314, 44, 6],
+      "sensor": "charge",
+      "threshold": 2,
+      "latch": true,
+      "channel": "pressure"
+    }
+  ],
+  "goals": [
+    {
+      "id": "growth",
+      "label": "Grow beyond the 32-cell starting plant",
+      "rect": [150, 210, 44, 100],
+      "material": 18,
+      "target": 40,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "charge",
+      "label": "Fire the remote grain lock",
+      "rect": [526, 212, 24, 24],
+      "material": -1,
+      "target": 2,
+      "channel": "pressure",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "grain",
+      "label": "Deliver 500 grains through the screen",
+      "rect": [700, 130, 44, 90],
+      "material": 3,
+      "target": 500,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 19],
+    "tools": [0],
+    "budget": 586,
+    "efficient": 504,
+    "radius": 12
+  },
+  "work": [
+    [100, 280, 160, 100],
+    [362, 212, 32, 20]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "New plant growth trips a relay. Reconnect its wire so the remote blast can release the screened grain supply.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 4 at (172, 310), square radius 10. Material 19 at (370, 222), square radius 2 to (386, 222)."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [172, 310],
+        "to": [172, 310],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [370, 222],
+        "to": [386, 222],
+        "radius": 2,
+        "material": 19,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

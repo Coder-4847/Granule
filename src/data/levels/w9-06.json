@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "id": "w9-06",
+  "world": 9,
+  "order": 6,
+  "title": "Thermal mirror",
+  "lesson": "Cool one volcanic sample and melt the other.",
+  "seed": 1906,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 23,
+      "temperature": 1250
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [576, 196, 8, 8],
+      "material": 24,
+      "temperature": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "obsidian formed: 16 cells",
+      "material": 24,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "lava formed: 16 cells",
+      "material": 23,
+      "target": 16,
+      "rect": [574, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [23, 24],
+    "tools": [0, 2, 1],
+    "budget": 13500,
+    "efficient": 10500,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [540, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Cool one volcanic sample and melt the other.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. obsidian → lava.",
+    "Reference outline: cool at (320, 200), square radius 10; heat at (580, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

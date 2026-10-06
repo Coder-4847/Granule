@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "id": "w9-05",
+  "world": 9,
+  "order": 5,
+  "title": "Twin furnaces",
+  "lesson": "Allocate enough heat for two different melting points.",
+  "seed": 1905,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 20,
+      "temperature": 20
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [576, 196, 8, 8],
+      "material": 19,
+      "temperature": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "molten glass formed: 16 cells",
+      "material": 34,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "molten metal formed: 16 cells",
+      "material": 33,
+      "target": 16,
+      "rect": [574, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [20, 19],
+    "tools": [0, 1],
+    "budget": 14581,
+    "efficient": 11340,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [540, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Allocate enough heat for two different melting points.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. glass → metal.",
+    "Reference outline: heat at (320, 200), square radius 10; heat at (580, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

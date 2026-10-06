@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "id": "w11-07",
+  "world": 11,
+  "order": 7,
+  "title": "Master: two kinds of pressure",
+  "lesson": "All targets must register together. Connected liquid, a piston, and powder require separate interventions.",
+  "seed": 2107,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [160, 130, 68, 4],
+      "material": 1
+    },
+    {
+      "rect": [160, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [224, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [178, 146, 32, 134],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [414, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [510, 152, 6, 30],
+      "material": 8
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [665, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [688, 164, 8, 8],
+      "material": 26
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s1-control",
+      "rect": [374, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s1-press",
+      "kind": "piston",
+      "rect": [460, 148, 12, 40],
+      "travel": [65, 0],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Water in far column: 60 cells",
+      "material": 4,
+      "target": 60,
+      "rect": [210, 134, 14, 70],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g1",
+      "label": "Piston clears the wooden target",
+      "material": 8,
+      "target": 0,
+      "rect": [510, 152, 6, 30],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s2-g2",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [685, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 31],
+    "tools": [0],
+    "budget": 825,
+    "efficient": 773,
+    "radius": 12
+  },
+  "work": [
+    [100, 215, 78, 120],
+    [360, 240, 80, 100],
+    [630, 164, 160, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Connected liquid, a piston, and powder require separate interventions.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Reference outline: water at (171, 250), square radius 7; water at (394, 270), square radius 6; spark at (687, 168), square radius 1; water at (171, 250), square radius 7. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [171, 250],
+        "to": [171, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [394, 270],
+        "to": [394, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [687, 168],
+        "to": [687, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 30,
+        "from": [171, 250],
+        "to": [171, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 60,
+        "from": [171, 250],
+        "to": [171, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

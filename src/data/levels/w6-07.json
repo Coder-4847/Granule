@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "id": "w6-07",
+  "world": 6,
+  "order": 7,
+  "title": "Garden soil",
+  "lesson": "Prepare mud and support new growth in separate beds.",
+  "seed": 1607,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [344, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [292, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [344, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [220, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [436, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [298, 134, 44, 4],
+      "material": 13
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [604, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [552, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [604, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [480, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [696, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [578, 134, 4, 8],
+      "material": 18
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [224, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [224, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [348, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Mud mixed: 12 cells",
+      "material": 14,
+      "target": 12,
+      "rect": [296, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g4",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [484, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g5",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [484, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g6",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [608, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g7",
+      "label": "Grow beyond 32 starting cells",
+      "material": 18,
+      "target": 36,
+      "rect": [556, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 1080,
+    "efficient": 840,
+    "radius": 12
+  },
+  "work": [
+    [230, 170, 200, 140],
+    [490, 170, 200, 140]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Prepare mud and support new growth in separate beds.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. mud → growth.",
+    "Reference outline: water at (320, 195), square radius 10; water at (580, 195), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 195],
+        "to": [320, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 195],
+        "to": [580, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

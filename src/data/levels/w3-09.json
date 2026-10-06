@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "id": "w3-09",
+  "world": 3,
+  "order": 9,
+  "title": "Wet boundary",
+  "lesson": "Preserve the liquid task while completing both burn tasks.",
+  "seed": 1309,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [214, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [162, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [214, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [442, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [448, 164, 4, 16],
+      "material": 8
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [702, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [708, 164, 4, 16],
+      "material": 18
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Delivered water: 80 cells",
+      "material": 4,
+      "target": 80,
+      "rect": [166, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Clear the wood plug",
+      "material": 8,
+      "target": 0,
+      "rect": [446, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Clear the plant plug",
+      "material": 18,
+      "target": 0,
+      "rect": [706, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 8, 18],
+    "tools": [0, 1],
+    "budget": 5535,
+    "efficient": 4305,
+    "radius": 12
+  },
+  "work": [
+    [100, 215, 200, 120],
+    [410, 150, 80, 80],
+    [670, 150, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Preserve the liquid task while completing both burn tasks.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. water → ignite → plantfire.",
+    "Reference outline: water at (190, 260), square radius 5; heat at (450, 172), square radius 10; heat at (710, 172), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 260],
+        "to": [190, 260],
+        "radius": 5,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

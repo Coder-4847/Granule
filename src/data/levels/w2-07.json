@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "id": "w2-07",
+  "world": 2,
+  "order": 7,
+  "title": "Reservoir pair",
+  "lesson": "Balance the connected vessel while filling a separate cup.",
+  "seed": 1207,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 130, 68, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [354, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [308, 146, 32, 134],
+      "material": 1
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [604, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [552, 200, 4, 90],
+      "material": 1
+    },
+    {
+      "rect": [604, 200, 4, 90],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Water in far column: 60 cells",
+      "material": 4,
+      "target": 60,
+      "rect": [340, 134, 14, 70],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Delivered water: 80 cells",
+      "material": 4,
+      "target": 80,
+      "rect": [556, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 929,
+    "efficient": 723,
+    "radius": 12
+  },
+  "work": [
+    [230, 215, 78, 120],
+    [490, 215, 200, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Balance the connected vessel while filling a separate cup.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. columns → water.",
+    "Reference outline: water at (301, 250), square radius 7; water at (580, 260), square radius 5; water at (301, 250), square radius 7. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [301, 250],
+        "to": [301, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 260],
+        "to": [580, 260],
+        "radius": 5,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 30,
+        "from": [301, 250],
+        "to": [301, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 60,
+        "from": [301, 250],
+        "to": [301, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

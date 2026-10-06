@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "id": "w4-04",
+  "world": 4,
+  "order": 4,
+  "title": "Cloud chamber",
+  "lesson": "Cool the insulated vapor sample to collect liquid water.",
+  "seed": 1404,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": 115
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 7,
+      "temperature": 115
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [7],
+    "tools": [0, 2],
+    "budget": 540,
+    "efficient": 420,
+    "radius": 12
+  },
+  "work": [[410, 160, 80, 80]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Cool the insulated vapor sample to collect liquid water.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. condense.",
+    "Reference outline: cool at (450, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 7,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      }
+    ]
+  }
+}

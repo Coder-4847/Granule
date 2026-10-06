@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "w3-03",
+  "world": 3,
+  "order": 3,
+  "title": "Dry garden",
+  "lesson": "Dry plant matter burns quickly once warmed.",
+  "seed": 1303,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [442, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [448, 164, 4, 16],
+      "material": 18
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Clear the plant plug",
+      "material": 18,
+      "target": 0,
+      "rect": [446, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [18],
+    "tools": [0, 1],
+    "budget": 2700,
+    "efficient": 2100,
+    "radius": 12
+  },
+  "work": [[410, 150, 80, 80]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Dry plant matter burns quickly once warmed.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. plantfire.",
+    "Reference outline: heat at (450, 172), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

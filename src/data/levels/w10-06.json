@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "id": "w10-06",
+  "world": 10,
+  "order": 6,
+  "title": "Etched glass",
+  "lesson": "Etch the metal control coupon. The released sand presses a plate, which sends a pulse to demolish the remote glass partition.",
+  "seed": 2006,
+  "terrain": [
+    {
+      "rect": [176, 216, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [176, 220, 4, 130],
+      "material": 1
+    },
+    {
+      "rect": [220, 220, 4, 130],
+      "material": 1
+    },
+    {
+      "rect": [180, 220, 40, 1],
+      "material": 19
+    },
+    {
+      "rect": [100, 160, 200, 4],
+      "material": 1
+    },
+    {
+      "rect": [100, 160, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [296, 160, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [396, 186, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [396, 190, 4, 210],
+      "material": 1
+    },
+    {
+      "rect": [440, 190, 4, 210],
+      "material": 1
+    },
+    {
+      "rect": [400, 330, 40, 18],
+      "material": 3
+    },
+    {
+      "rect": [470, 200, 210, 4],
+      "material": 19
+    },
+    {
+      "rect": [680, 196, 8, 12],
+      "material": 27
+    },
+    {
+      "rect": [697, 190, 6, 32],
+      "material": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "grain-valve",
+      "kind": "gate",
+      "rect": [400, 324, 40, 6],
+      "sensor": "etched",
+      "threshold": 4,
+      "latch": true,
+      "comparison": "at-most"
+    },
+    {
+      "id": "plate-relay",
+      "kind": "relay",
+      "rect": [450, 190, 12, 10],
+      "sensor": "plate",
+      "threshold": 400,
+      "latch": true,
+      "output": [469, 202]
+    }
+  ],
+  "goals": [
+    {
+      "id": "left-spill",
+      "label": "Keep the spill guard clear",
+      "rect": [104, 164, 72, 220],
+      "material": 22,
+      "target": 8,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "right-spill",
+      "label": "Keep the spill guard clear",
+      "rect": [224, 164, 72, 220],
+      "material": 22,
+      "target": 8,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "etched",
+      "label": "Dissolve the 40-cell metal coupon",
+      "rect": [180, 220, 40, 1],
+      "material": 19,
+      "target": 4,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": true
+    },
+    {
+      "id": "plate",
+      "label": "Put 400 sand cells on the plate",
+      "rect": [400, 190, 40, 100],
+      "material": 3,
+      "target": 400,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "glass",
+      "label": "Demolish the remote glass partition",
+      "rect": [697, 190, 6, 32],
+      "material": 20,
+      "target": 8,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [22],
+    "tools": [0],
+    "budget": 488,
+    "efficient": 420,
+    "radius": 12
+  },
+  "work": [[110, 250, 180, 100]],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Etch the metal control coupon. The released sand presses a plate, which sends a pulse to demolish the remote glass partition.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 22 at (200, 280), square radius 10."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [200, 280],
+        "to": [200, 280],
+        "radius": 10,
+        "material": 22,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

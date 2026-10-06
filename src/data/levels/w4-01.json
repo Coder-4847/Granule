@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "id": "w4-01",
+  "world": 4,
+  "order": 1,
+  "title": "Thaw",
+  "lesson": "Warm the ice sample until water appears in its sealed cell.",
+  "seed": 1401,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": -20
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 10,
+      "temperature": -20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [10],
+    "tools": [0, 1],
+    "budget": 540,
+    "efficient": 420,
+    "radius": 12
+  },
+  "work": [[410, 160, 80, 80]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Warm the ice sample until water appears in its sealed cell.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. melt.",
+    "Reference outline: heat at (450, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 10,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "id": "w10-05",
+  "world": 10,
+  "order": 5,
+  "title": "Obsidian mill",
+  "lesson": "Quench the volcanic control cup. Enough surviving water and enough obsidian together release the mill reservoir and power the far contact.",
+  "seed": 2005,
+  "terrain": [
+    {
+      "rect": [146, 216, 52, 4],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [146, 220, 4, 120],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [194, 220, 4, 120],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [150, 220, 44, 2],
+      "material": 23,
+      "temperature": 1250
+    },
+    {
+      "rect": [416, 176, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [416, 180, 4, 220],
+      "material": 1
+    },
+    {
+      "rect": [468, 180, 4, 220],
+      "material": 1
+    },
+    {
+      "rect": [420, 350, 48, 20],
+      "material": 4
+    },
+    {
+      "rect": [510, 188, 200, 4],
+      "material": 19
+    }
+  ],
+  "sensors": [
+    {
+      "id": "mill-flow",
+      "rect": [420, 180, 48, 100],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "rock-lock",
+      "kind": "gate",
+      "rect": [420, 344, 48, 6],
+      "sensor": "rock",
+      "threshold": 40,
+      "latch": true
+    },
+    {
+      "id": "water-lock",
+      "kind": "gate",
+      "rect": [420, 314, 48, 6],
+      "sensor": "water",
+      "threshold": 300,
+      "latch": true
+    },
+    {
+      "id": "turbine",
+      "kind": "turbine",
+      "rect": [484, 180, 16, 16],
+      "sensor": "mill-flow",
+      "threshold": 300,
+      "latch": true,
+      "output": [509, 190]
+    }
+  ],
+  "goals": [
+    {
+      "id": "rock",
+      "label": "Form 40 obsidian cells",
+      "rect": [150, 220, 44, 50],
+      "material": 24,
+      "target": 40,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "water",
+      "label": "Retain 300 coolant cells",
+      "rect": [150, 220, 44, 70],
+      "material": 4,
+      "target": 300,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "output",
+      "label": "Carry turbine current to the far contact",
+      "rect": [680, 188, 28, 4],
+      "material": 19,
+      "target": 0.3,
+      "channel": "charge",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 703,
+    "efficient": 605,
+    "radius": 12
+  },
+  "work": [[90, 290, 180, 100]],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Quench the volcanic control cup. Enough surviving water and enough obsidian together release the mill reservoir and power the far contact.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 4 at (172, 320), square radius 12."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [172, 320],
+        "to": [172, 320],
+        "radius": 12,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

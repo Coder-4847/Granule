@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "id": "w7-07",
+  "world": 7,
+  "order": 7,
+  "title": "Cold storage",
+  "lesson": "Freeze the water sample and trigger the isolated powder.",
+  "seed": 1707,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 4,
+      "temperature": 20
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [535, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [558, 164, 8, 8],
+      "material": 26
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "ice formed: 16 cells",
+      "material": 10,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [555, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 31],
+    "tools": [0, 2],
+    "budget": 546,
+    "efficient": 425,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [500, 164, 160, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Freeze the water sample and trigger the isolated powder.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. freeze → powder.",
+    "Reference outline: cool at (320, 200), square radius 10; spark at (557, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [557, 168],
+        "to": [557, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

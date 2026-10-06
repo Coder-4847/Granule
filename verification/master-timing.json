@@ -1,0 +1,282 @@
+[
+  {
+    "id": "w11-01",
+    "timing": {
+      "s0-g0": {
+        "label": "Sand receiver A: 80 cells",
+        "first": 12,
+        "last": 900
+      },
+      "s0-g1": {
+        "label": "Sand receiver B: 80 cells",
+        "first": 12,
+        "last": 900
+      },
+      "s1-g2": {
+        "label": "Water in far column: 60 cells",
+        "first": 66,
+        "last": 900
+      },
+      "s2-g3": {
+        "label": "molten glass formed: 16 cells",
+        "first": 6,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-02",
+    "timing": {
+      "s0-g0": {
+        "label": "Floating oil: 80 cells",
+        "first": 12,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g2": {
+        "label": "Keep the left guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g3": {
+        "label": "Keep the right guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g4": {
+        "label": "Dissolve the metal coupon",
+        "first": 18,
+        "last": 900
+      },
+      "s2-g5": {
+        "label": "obsidian formed: 16 cells",
+        "first": 6,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-03",
+    "timing": {
+      "s0-g0": {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g1": {
+        "label": "Keep the left guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g2": {
+        "label": "Keep the right guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g3": {
+        "label": "Grow beyond 32 starting cells",
+        "first": 372,
+        "last": 900
+      },
+      "s1-g4": {
+        "label": "Pulse reaches the far contact",
+        "first": 126,
+        "last": 138
+      },
+      "s2-g5": {
+        "label": "Release sand into the lower receiver",
+        "first": 18,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-04",
+    "timing": {
+      "s0-g0": {
+        "label": "ice formed: 16 cells",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "Generator sends current",
+        "first": 90,
+        "last": 108
+      },
+      "s2-g2": {
+        "label": "water formed: 16 cells",
+        "first": 6,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-05",
+    "timing": {
+      "s0-g0": {
+        "label": "Clear the plant plug",
+        "first": 102,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "molten metal formed: 16 cells",
+        "first": 6,
+        "last": 900
+      },
+      "s2-g2": {
+        "label": "Pressure wave reaches the sensor",
+        "first": 42,
+        "last": 186
+      }
+    }
+  },
+  {
+    "id": "w11-06",
+    "timing": {
+      "s0-g0": {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g1": {
+        "label": "Keep the left guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g2": {
+        "label": "Keep the right guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g3": {
+        "label": "Brine mixed: 24 cells",
+        "first": 12,
+        "last": 900
+      },
+      "s1-g4": {
+        "label": "Generator sends current",
+        "first": 90,
+        "last": 108
+      },
+      "s2-g5": {
+        "label": "water formed: 16 cells",
+        "first": 6,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-07",
+    "timing": {
+      "s0-g0": {
+        "label": "Water in far column: 60 cells",
+        "first": 72,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "Piston clears the wooden target",
+        "first": 36,
+        "last": 900
+      },
+      "s2-g2": {
+        "label": "Pressure wave reaches the sensor",
+        "first": 6,
+        "last": 120
+      }
+    }
+  },
+  {
+    "id": "w11-08",
+    "timing": {
+      "s0-g0": {
+        "label": "lava formed: 16 cells",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "Pulse reaches the far contact",
+        "first": 126,
+        "last": 138
+      },
+      "s2-g2": {
+        "label": "Relay fires the remote charge",
+        "first": 132,
+        "last": 252
+      }
+    }
+  },
+  {
+    "id": "w11-09",
+    "timing": {
+      "s0-g0": {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g1": {
+        "label": "Keep the left guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g2": {
+        "label": "Keep the right guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s0-g3": {
+        "label": "Mud mixed: 12 cells",
+        "first": 12,
+        "last": 900
+      },
+      "s1-g4": {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g5": {
+        "label": "Keep the left guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g6": {
+        "label": "Keep the right guard clear",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g7": {
+        "label": "Rust appears on the metal",
+        "first": 30,
+        "last": 900
+      },
+      "s2-g8": {
+        "label": "Release sand into the lower receiver",
+        "first": 18,
+        "last": 900
+      }
+    }
+  },
+  {
+    "id": "w11-10",
+    "timing": {
+      "s0-g0": {
+        "label": "molten glass formed: 16 cells",
+        "first": 6,
+        "last": 900
+      },
+      "s1-g1": {
+        "label": "Release sand into the lower receiver",
+        "first": 18,
+        "last": 900
+      },
+      "s2-g2": {
+        "label": "Pressure wave reaches the sensor",
+        "first": 6,
+        "last": 144
+      }
+    }
+  }
+]

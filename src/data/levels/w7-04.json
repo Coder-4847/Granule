@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "id": "w7-04",
+  "world": 7,
+  "order": 4,
+  "title": "Blast and gate",
+  "lesson": "Keep the water control separate from the explosive chamber.",
+  "seed": 1704,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [275, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [298, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [500, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [500, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [544, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [611, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [611, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [655, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [615, 204, 40, 10],
+      "material": 3
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s1-control",
+      "rect": [504, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s1-gate",
+      "kind": "gate",
+      "rect": [615, 200, 40, 4],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [295, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [615, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31, 4],
+    "tools": [0],
+    "budget": 200,
+    "efficient": 156,
+    "radius": 12
+  },
+  "work": [
+    [240, 164, 160, 100],
+    [490, 240, 80, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Keep the water control separate from the explosive chamber.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. blast → gate.",
+    "Reference outline: spark at (297, 168), square radius 1; water at (524, 270), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [297, 168],
+        "to": [297, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [524, 270],
+        "to": [524, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "id": "w10-02",
+  "world": 10,
+  "order": 2,
+  "title": "Garden engine",
+  "lesson": "Water lifts one latch; a sand counterweight opens the other. Both must release the shared reservoir into the planted earth below.",
+  "seed": 2002,
+  "terrain": [
+    {
+      "rect": [126, 246, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [126, 250, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [170, 250, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [296, 246, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [296, 250, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [340, 250, 4, 110],
+      "material": 1
+    },
+    {
+      "rect": [576, 146, 72, 4],
+      "material": 1
+    },
+    {
+      "rect": [576, 150, 4, 260],
+      "material": 1
+    },
+    {
+      "rect": [644, 150, 4, 260],
+      "material": 1
+    },
+    {
+      "rect": [580, 360, 64, 24],
+      "material": 4
+    },
+    {
+      "rect": [580, 150, 64, 4],
+      "material": 13
+    },
+    {
+      "rect": [608, 154, 4, 24],
+      "material": 18
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "float",
+      "kind": "float",
+      "rect": [180, 260, 18, 8],
+      "sensor": "float-water",
+      "threshold": 120,
+      "latch": true,
+      "travel": [0, 24]
+    },
+    {
+      "id": "lever",
+      "kind": "lever",
+      "rect": [350, 260, 24, 6],
+      "sensor": "sand-weight",
+      "threshold": 120,
+      "latch": true,
+      "travel": [12, 18]
+    },
+    {
+      "id": "upper-latch",
+      "kind": "gate",
+      "rect": [580, 352, 64, 8],
+      "sensor": "float-water",
+      "threshold": 120,
+      "latch": true
+    },
+    {
+      "id": "lower-latch",
+      "kind": "gate",
+      "rect": [580, 318, 64, 8],
+      "sensor": "sand-weight",
+      "threshold": 120,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "float-water",
+      "label": "Raise the wet float",
+      "rect": [130, 250, 40, 70],
+      "material": 4,
+      "target": 120,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "sand-weight",
+      "label": "Load the counterweight",
+      "rect": [300, 250, 40, 70],
+      "material": 3,
+      "target": 120,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "mud",
+      "label": "Irrigate the soil: 60 mud cells",
+      "rect": [580, 150, 64, 64],
+      "material": 14,
+      "target": 60,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "plant",
+      "label": "Grow the planted stem beyond 96 cells",
+      "rect": [580, 150, 64, 100],
+      "material": 18,
+      "target": 104,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 3],
+    "tools": [0],
+    "budget": 352,
+    "efficient": 303,
+    "radius": 12
+  },
+  "work": [
+    [90, 320, 120, 90],
+    [260, 320, 120, 90]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Water lifts one latch; a sand counterweight opens the other. Both must release the shared reservoir into the planted earth below.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 4 at (150, 340), square radius 6. Material 3 at (320, 340), square radius 6."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [150, 340],
+        "to": [150, 340],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 340],
+        "to": [320, 340],
+        "radius": 6,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

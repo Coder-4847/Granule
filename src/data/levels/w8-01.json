@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "id": "w8-01",
+  "world": 8,
+  "order": 1,
+  "title": "Continuity",
+  "lesson": "Put a spark at the input end of the metal wire.",
+  "seed": 1801,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [390, 180, 140, 4],
+      "material": 19
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pulse reaches the far contact",
+      "material": -1,
+      "target": 0.3,
+      "rect": [510, 180, 16, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 6,
+    "efficient": 5,
+    "radius": 12
+  },
+  "work": [[360, 170, 65, 60]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Put a spark at the input end of the metal wire.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. circuit.",
+    "Reference outline: spark at (389, 182), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [389, 182],
+        "to": [389, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

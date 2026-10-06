@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "id": "w5-09",
+  "world": 5,
+  "order": 9,
+  "title": "Three operators",
+  "lesson": "A gate, a piston, and a wheel respond to distinct sensors.",
+  "seed": 1509,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [110, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [110, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [154, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [221, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [221, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [265, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [225, 204, 40, 10],
+      "material": 3
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [414, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [510, 152, 6, 30],
+      "material": 8
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [630, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [674, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [706, 192, 100, 4],
+      "material": 19
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s0-control",
+      "rect": [114, 194, 40, 35],
+      "material": 4
+    },
+    {
+      "id": "s1-control",
+      "rect": [374, 194, 40, 35],
+      "material": 4
+    },
+    {
+      "id": "s2-control",
+      "rect": [634, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s0-gate",
+      "kind": "gate",
+      "rect": [225, 200, 40, 4],
+      "sensor": "s0-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s1-press",
+      "kind": "piston",
+      "rect": [460, 148, 12, 40],
+      "travel": [65, 0],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s2-drive",
+      "kind": "wheel",
+      "rect": [688, 188, 12, 12],
+      "sensor": "s2-control",
+      "threshold": 100,
+      "latch": true,
+      "output": [705, 194]
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [225, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Piston clears the wooden target",
+      "material": 8,
+      "target": 0,
+      "rect": [510, 152, 6, 30],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Generator sends current",
+      "material": 19,
+      "target": 0.3,
+      "rect": [782, 192, 20, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 584,
+    "efficient": 454,
+    "radius": 12
+  },
+  "work": [
+    [100, 240, 80, 100],
+    [360, 240, 80, 100],
+    [620, 240, 80, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "A gate, a piston, and a wheel respond to distinct sensors.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. gate → piston → wheel.",
+    "Reference outline: water at (134, 270), square radius 6; water at (394, 270), square radius 6; water at (654, 270), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [134, 270],
+        "to": [134, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [394, 270],
+        "to": [394, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [654, 270],
+        "to": [654, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

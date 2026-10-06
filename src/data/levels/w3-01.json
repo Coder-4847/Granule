@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "w3-01",
+  "world": 3,
+  "order": 1,
+  "title": "A warm beginning",
+  "lesson": "Heat the marked wooden plug until it catches; the remaining fuel burns over time.",
+  "seed": 1301,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [442, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [448, 164, 4, 16],
+      "material": 8
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Clear the wood plug",
+      "material": 8,
+      "target": 0,
+      "rect": [446, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [8],
+    "tools": [0, 1],
+    "budget": 2700,
+    "efficient": 2100,
+    "radius": 12
+  },
+  "work": [[410, 150, 80, 80]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Heat the marked wooden plug until it catches; the remaining fuel burns over time.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. ignite.",
+    "Reference outline: heat at (450, 172), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

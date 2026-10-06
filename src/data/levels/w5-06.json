@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "w5-06",
+  "world": 5,
+  "order": 6,
+  "title": "Open and press",
+  "lesson": "Operate two machines with separate control cups.",
+  "seed": 1506,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [240, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [240, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [284, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [351, 130, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [351, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [395, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [355, 204, 40, 10],
+      "material": 3
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [500, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [500, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [544, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [640, 152, 6, 30],
+      "material": 8
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s0-control",
+      "rect": [244, 194, 40, 35],
+      "material": 4
+    },
+    {
+      "id": "s1-control",
+      "rect": [504, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s0-gate",
+      "kind": "gate",
+      "rect": [355, 200, 40, 4],
+      "sensor": "s0-control",
+      "threshold": 100,
+      "latch": true
+    },
+    {
+      "id": "s1-press",
+      "kind": "piston",
+      "rect": [590, 148, 12, 40],
+      "travel": [65, 0],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Release sand into the lower receiver",
+      "material": 3,
+      "target": 200,
+      "rect": [355, 134, 40, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Piston clears the wooden target",
+      "material": 8,
+      "target": 0,
+      "rect": [640, 152, 6, 30],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 389,
+    "efficient": 303,
+    "radius": 12
+  },
+  "work": [
+    [230, 240, 80, 100],
+    [490, 240, 80, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Operate two machines with separate control cups.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. gate → piston.",
+    "Reference outline: water at (264, 270), square radius 6; water at (524, 270), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [264, 270],
+        "to": [264, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [524, 270],
+        "to": [524, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

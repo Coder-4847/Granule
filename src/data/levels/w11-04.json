@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "id": "w11-04",
+  "world": 11,
+  "order": 4,
+  "title": "Master: winter mill",
+  "lesson": "All targets must register together. Freeze water, power a wheel, and thaw a second sample.",
+  "seed": 2104,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [160, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [186, 196, 8, 8],
+      "material": 4,
+      "temperature": 20
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 190, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [370, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [414, 194, 4, 96],
+      "material": 1
+    },
+    {
+      "rect": [446, 192, 100, 4],
+      "material": 19
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [680, 170, 60, 60],
+      "material": 1,
+      "temperature": -20
+    },
+    {
+      "rect": [706, 196, 8, 8],
+      "material": 10,
+      "temperature": -20
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s1-control",
+      "rect": [374, 194, 40, 35],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "s1-drive",
+      "kind": "wheel",
+      "rect": [428, 188, 12, 12],
+      "sensor": "s1-control",
+      "threshold": 100,
+      "latch": true,
+      "output": [445, 194]
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "ice formed: 16 cells",
+      "material": 10,
+      "target": 16,
+      "rect": [184, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g1",
+      "label": "Generator sends current",
+      "material": 19,
+      "target": 0.3,
+      "rect": [522, 192, 20, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": false
+    },
+    {
+      "id": "s2-g2",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [704, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 10],
+    "tools": [0, 2, 1],
+    "budget": 1058,
+    "efficient": 992,
+    "radius": 12
+  },
+  "work": [
+    [150, 160, 80, 80],
+    [360, 240, 80, 100],
+    [670, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Freeze water, power a wheel, and thaw a second sample.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Reference outline: cool at (190, 200), square radius 10; water at (394, 270), square radius 6; heat at (710, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [394, 270],
+        "to": [394, 270],
+        "radius": 6,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 10,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

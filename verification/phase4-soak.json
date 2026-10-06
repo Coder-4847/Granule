@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "durationMs": 601114,
+  "iterations": 590,
+  "samples": [
+    {
+      "elapsedMs": 110,
+      "heap": 5079780,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 60915,
+      "heap": 5304432,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 122064,
+      "heap": 5352664,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 183021,
+      "heap": 5383048,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 244138,
+      "heap": 5341560,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 305615,
+      "heap": 5371728,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 366696,
+      "heap": 5372612,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 427693,
+      "heap": 5382756,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 489029,
+      "heap": 5394276,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    },
+    {
+      "elapsedMs": 550447,
+      "heap": 5424396,
+      "resources": {
+        "Texture": 13,
+        "Buffer": 1,
+        "Framebuffer": 13,
+        "Program": 13,
+        "Shader": 0,
+        "VertexArray": 0,
+        "Sync": 0
+      }
+    }
+  ],
+  "final": {
+    "heap": 5356360,
+    "resources": {
+      "Texture": 11,
+      "Buffer": 1,
+      "Framebuffer": 11,
+      "Program": 11,
+      "Shader": 0,
+      "VertexArray": 0,
+      "Sync": 0
+    }
+  },
+  "consoleErrorsOrWarnings": []
+}

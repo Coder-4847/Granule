@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "id": "w6-03",
+  "world": 6,
+  "order": 3,
+  "title": "Patina",
+  "lesson": "Keep water against the metal surface until rust appears.",
+  "seed": 1603,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [566, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [428, 134, 44, 2],
+      "material": 19
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [354, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [354, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [478, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Rust appears on the metal",
+      "material": 29,
+      "target": 1,
+      "rect": [428, 134, 44, 2],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 540,
+    "efficient": 420,
+    "radius": 12
+  },
+  "work": [[360, 170, 200, 140]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Keep water against the metal surface until rust appears.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. rust.",
+    "Reference outline: water at (450, 195), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 195],
+        "to": [450, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

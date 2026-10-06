@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "id": "w6-08",
+  "world": 6,
+  "order": 8,
+  "title": "Saline cold",
+  "lesson": "Mix brine while freezing the isolated water cell.",
+  "seed": 1608,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [292, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [344, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [292, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [344, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [220, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [436, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [298, 134, 44, 12],
+      "material": 4
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [576, 196, 8, 8],
+      "material": 4,
+      "temperature": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 15,
+      "target": 8,
+      "rect": [224, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [224, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [348, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Brine mixed: 24 cells",
+      "material": 32,
+      "target": 24,
+      "rect": [296, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g4",
+      "label": "ice formed: 16 cells",
+      "material": 10,
+      "target": 16,
+      "rect": [574, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [15, 4],
+    "tools": [0, 2],
+    "budget": 735,
+    "efficient": 572,
+    "radius": 12
+  },
+  "work": [
+    [230, 170, 200, 140],
+    [540, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Mix brine while freezing the isolated water cell.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. salt → freeze.",
+    "Reference outline: material at (320, 220), square radius 6; cool at (580, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 220],
+        "to": [320, 220],
+        "radius": 6,
+        "material": 15,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      }
+    ]
+  }
+}

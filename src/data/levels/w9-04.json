@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "id": "w9-04",
+  "world": 9,
+  "order": 4,
+  "title": "Return to the melt",
+  "lesson": "Heat obsidian above its melting threshold.",
+  "seed": 1904,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 24,
+      "temperature": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "lava formed: 16 cells",
+      "material": 23,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [24],
+    "tools": [0, 1],
+    "budget": 8101,
+    "efficient": 6300,
+    "radius": 12
+  },
+  "work": [[410, 160, 80, 80]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Heat obsidian above its melting threshold.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. lava.",
+    "Reference outline: heat at (450, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "id": "w4-06",
+  "world": 4,
+  "order": 6,
+  "title": "Steam cycle",
+  "lesson": "Create vapor in one chamber and condense it in another.",
+  "seed": 1406,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": 90
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 4,
+      "temperature": 90
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 170, 60, 60],
+      "material": 1,
+      "temperature": 115
+    },
+    {
+      "rect": [576, 196, 8, 8],
+      "material": 7,
+      "temperature": 115
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "steam formed: 16 cells",
+      "material": 7,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [574, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 7],
+    "tools": [0, 1, 2],
+    "budget": 1620,
+    "efficient": 1260,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [540, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Create vapor in one chamber and condense it in another.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. boil → condense.",
+    "Reference outline: heat at (320, 200), square radius 10; cool at (580, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 200],
+        "to": [580, 200],
+        "radius": 10,
+        "material": 7,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      }
+    ]
+  }
+}

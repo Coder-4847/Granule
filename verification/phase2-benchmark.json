@@ -1,0 +1,21 @@
+{
+  "cells": 518400,
+  "width": 960,
+  "height": 540,
+  "frames": 7200,
+  "fps": 238.96845284521817,
+  "p50ms": 4.199999999998909,
+  "p95ms": 4.299999999999272,
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 Laptop GPU (0x00002C59) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "lighting": true,
+  "ticksPerFrame": 1,
+  "transportSubsteps": 8,
+  "stressRefreshFrames": 240,
+  "passed": true,
+  "elapsedSeconds": 30.314,
+  "date": "2026-10-04T11:30:51.333Z",
+  "browser": "154.0.8037.97",
+  "consoleErrorsOrWarnings": [],
+  "representativeMidRangeHardware": false,
+  "note": "Phase 2 stress workload repeats every 240 frames with audio telemetry, lighting, and GPU particles. Mid-range hardware remains unverified; the user authorized continuing on the available GPU."
+}

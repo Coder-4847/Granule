@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "id": "w11-01",
+  "world": 11,
+  "order": 1,
+  "title": "Master: fine balance",
+  "lesson": "All targets must register together. Precise deliveries and a thermal task leave little spare material.",
+  "seed": 2101,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [125, 130, 40, 4],
+      "material": 1
+    },
+    {
+      "rect": [125, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [161, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [225, 130, 40, 4],
+      "material": 1
+    },
+    {
+      "rect": [225, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [261, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 130, 68, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [484, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [438, 146, 32, 134],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [680, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [706, 196, 8, 8],
+      "material": 20,
+      "temperature": 20
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Sand receiver A: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [129, 134, 32, 65],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s0-g1",
+      "label": "Sand receiver B: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [229, 134, 32, 65],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g2",
+      "label": "Water in far column: 60 cells",
+      "material": 4,
+      "target": 60,
+      "rect": [470, 134, 14, 70],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s2-g3",
+      "label": "molten glass formed: 16 cells",
+      "material": 34,
+      "target": 16,
+      "rect": [704, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [3, 4, 20],
+    "tools": [0, 1],
+    "budget": 6259,
+    "efficient": 5868,
+    "radius": 12
+  },
+  "work": [
+    [100, 215, 200, 120],
+    [360, 215, 78, 120],
+    [670, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Precise deliveries and a thermal task leave little spare material.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Reference outline: sand at (145, 260), square radius 5; sand at (245, 260), square radius 5; water at (431, 250), square radius 7; heat at (710, 200), square radius 10; water at (431, 250), square radius 7. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [145, 260],
+        "to": [145, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [245, 260],
+        "to": [245, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 20,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 30,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 60,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

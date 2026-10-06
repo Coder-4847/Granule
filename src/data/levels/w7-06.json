@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "w7-06",
+  "world": 7,
+  "order": 6,
+  "title": "After the shock",
+  "lesson": "Complete a chain reaction and a protected sand delivery.",
+  "seed": 1706,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [275, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [298, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [320, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [552, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [604, 134, 4, 66],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 2,
+      "rect": [320, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Delivered sand: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [556, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31, 3],
+    "tools": [0],
+    "budget": 141,
+    "efficient": 110,
+    "radius": 12
+  },
+  "work": [
+    [240, 164, 160, 100],
+    [490, 215, 200, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Complete a chain reaction and a protected sand delivery.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. chain → sand.",
+    "Reference outline: spark at (297, 168), square radius 1; sand at (580, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [297, 168],
+        "to": [297, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 260],
+        "to": [580, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,2314 @@
+[
+  {
+    "id": "w1-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-01",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-02",
+    "control": "uniform-12",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-03",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w1-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-04",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-05",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-06",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-07",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w1-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-08",
+    "control": "uniform-16",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w1-08",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w1-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-09",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w1-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w1-10",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w1-10",
+    "control": "uniform-12",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w2-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-01",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w2-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-02",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 132,
+    "accepted": 33,
+    "ticks": 900
+  },
+  {
+    "id": "w2-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-03",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 792,
+    "accepted": 198,
+    "ticks": 900
+  },
+  {
+    "id": "w2-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w2-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-05",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w2-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w2-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-06",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w2-06",
+    "control": "uniform-12",
+    "solved": false,
+    "used": 268,
+    "accepted": 67,
+    "ticks": 900
+  },
+  {
+    "id": "w2-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 928,
+    "accepted": 232,
+    "ticks": 900
+  },
+  {
+    "id": "w2-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 328,
+    "accepted": 82,
+    "ticks": 900
+  },
+  {
+    "id": "w2-08",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 328,
+    "accepted": 82,
+    "ticks": 900
+  },
+  {
+    "id": "w2-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-09",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w2-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w2-09",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 404,
+    "accepted": 101,
+    "ticks": 900
+  },
+  {
+    "id": "w2-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w2-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1124,
+    "accepted": 281,
+    "ticks": 900
+  },
+  {
+    "id": "w3-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-01",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 2700,
+    "accepted": 675,
+    "ticks": 900
+  },
+  {
+    "id": "w3-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-02",
+    "control": "uniform-28",
+    "solved": false,
+    "used": 2700,
+    "accepted": 675,
+    "ticks": 900
+  },
+  {
+    "id": "w3-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-03",
+    "control": "uniform-18",
+    "solved": false,
+    "used": 2700,
+    "accepted": 675,
+    "ticks": 900
+  },
+  {
+    "id": "w3-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-04",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-05",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-05",
+    "control": "uniform-16",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-06",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 5400,
+    "accepted": 1350,
+    "ticks": 900
+  },
+  {
+    "id": "w3-06",
+    "control": "uniform-28",
+    "solved": false,
+    "used": 5400,
+    "accepted": 1350,
+    "ticks": 900
+  },
+  {
+    "id": "w3-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-07",
+    "control": "uniform-18",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-07",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 2832,
+    "accepted": 708,
+    "ticks": 900
+  },
+  {
+    "id": "w3-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-08",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 8100,
+    "accepted": 2025,
+    "ticks": 900
+  },
+  {
+    "id": "w3-08",
+    "control": "uniform-28",
+    "solved": false,
+    "used": 8100,
+    "accepted": 2025,
+    "ticks": 900
+  },
+  {
+    "id": "w3-08",
+    "control": "uniform-18",
+    "solved": false,
+    "used": 8100,
+    "accepted": 2025,
+    "ticks": 900
+  },
+  {
+    "id": "w3-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w3-09",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w3-09",
+    "control": "uniform-18",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w3-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w3-10",
+    "control": "uniform-28",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w3-10",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w3-10",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 5532,
+    "accepted": 1383,
+    "ticks": 900
+  },
+  {
+    "id": "w4-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-01",
+    "control": "uniform-10",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w4-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-02",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w4-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-03",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1080,
+    "accepted": 270,
+    "ticks": 900
+  },
+  {
+    "id": "w4-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-04",
+    "control": "uniform-7",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w4-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 488,
+    "accepted": 122,
+    "ticks": 900
+  },
+  {
+    "id": "w4-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-06",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1620,
+    "accepted": 405,
+    "ticks": 900
+  },
+  {
+    "id": "w4-06",
+    "control": "uniform-7",
+    "solved": false,
+    "used": 1620,
+    "accepted": 405,
+    "ticks": 900
+  },
+  {
+    "id": "w4-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 3240,
+    "accepted": 810,
+    "ticks": 900
+  },
+  {
+    "id": "w4-07",
+    "control": "uniform-28",
+    "solved": false,
+    "used": 3240,
+    "accepted": 810,
+    "ticks": 900
+  },
+  {
+    "id": "w4-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-08",
+    "control": "uniform-10",
+    "solved": false,
+    "used": 1332,
+    "accepted": 333,
+    "ticks": 900
+  },
+  {
+    "id": "w4-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1332,
+    "accepted": 333,
+    "ticks": 900
+  },
+  {
+    "id": "w4-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-09",
+    "control": "uniform-10",
+    "solved": false,
+    "used": 2160,
+    "accepted": 540,
+    "ticks": 900
+  },
+  {
+    "id": "w4-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 2160,
+    "accepted": 540,
+    "ticks": 900
+  },
+  {
+    "id": "w4-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-10",
+    "control": "uniform-7",
+    "solved": false,
+    "used": 3780,
+    "accepted": 945,
+    "ticks": 900
+  },
+  {
+    "id": "w4-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 3780,
+    "accepted": 945,
+    "ticks": 900
+  },
+  {
+    "id": "w4-10",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 3780,
+    "accepted": 945,
+    "ticks": 900
+  },
+  {
+    "id": "w5-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-01",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w5-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-02",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w5-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-03",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w5-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-04",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w5-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w5-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-06",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 388,
+    "accepted": 97,
+    "ticks": 900
+  },
+  {
+    "id": "w5-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-07",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 388,
+    "accepted": 97,
+    "ticks": 900
+  },
+  {
+    "id": "w5-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 388,
+    "accepted": 97,
+    "ticks": 900
+  },
+  {
+    "id": "w5-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 388,
+    "accepted": 97,
+    "ticks": 900
+  },
+  {
+    "id": "w5-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 900
+  },
+  {
+    "id": "w5-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w5-10",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 900
+  },
+  {
+    "id": "w5-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 900
+  },
+  {
+    "id": "w6-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-01",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w6-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-02",
+    "control": "uniform-15",
+    "solved": false,
+    "used": 192,
+    "accepted": 48,
+    "ticks": 900
+  },
+  {
+    "id": "w6-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-03",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w6-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w6-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 540,
+    "accepted": 135,
+    "ticks": 900
+  },
+  {
+    "id": "w6-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-06",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 1080,
+    "accepted": 270,
+    "ticks": 900
+  },
+  {
+    "id": "w6-06",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1080,
+    "accepted": 270,
+    "ticks": 900
+  },
+  {
+    "id": "w6-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1080,
+    "accepted": 270,
+    "ticks": 900
+  },
+  {
+    "id": "w6-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-08",
+    "control": "uniform-15",
+    "solved": false,
+    "used": 732,
+    "accepted": 183,
+    "ticks": 900
+  },
+  {
+    "id": "w6-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 732,
+    "accepted": 183,
+    "ticks": 900
+  },
+  {
+    "id": "w6-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-09",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 1272,
+    "accepted": 318,
+    "ticks": 900
+  },
+  {
+    "id": "w6-09",
+    "control": "uniform-15",
+    "solved": false,
+    "used": 1272,
+    "accepted": 318,
+    "ticks": 900
+  },
+  {
+    "id": "w6-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1272,
+    "accepted": 318,
+    "ticks": 900
+  },
+  {
+    "id": "w6-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w6-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1272,
+    "accepted": 318,
+    "ticks": 900
+  },
+  {
+    "id": "w6-10",
+    "control": "uniform-15",
+    "solved": false,
+    "used": 1272,
+    "accepted": 318,
+    "ticks": 900
+  },
+  {
+    "id": "w7-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-01",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w7-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-02",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w7-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-03",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w7-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-04",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w7-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w7-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-05",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 8,
+    "accepted": 2,
+    "ticks": 900
+  },
+  {
+    "id": "w7-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-06",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 140,
+    "accepted": 35,
+    "ticks": 900
+  },
+  {
+    "id": "w7-06",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 140,
+    "accepted": 35,
+    "ticks": 900
+  },
+  {
+    "id": "w7-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 544,
+    "accepted": 136,
+    "ticks": 900
+  },
+  {
+    "id": "w7-07",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 544,
+    "accepted": 136,
+    "ticks": 900
+  },
+  {
+    "id": "w7-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w7-08",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w7-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-09",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 16,
+    "accepted": 4,
+    "ticks": 900
+  },
+  {
+    "id": "w7-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w7-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 204,
+    "accepted": 51,
+    "ticks": 900
+  },
+  {
+    "id": "w7-10",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 204,
+    "accepted": 51,
+    "ticks": 900
+  },
+  {
+    "id": "w8-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-01",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w8-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-02",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w8-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-03",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 4,
+    "accepted": 1,
+    "ticks": 900
+  },
+  {
+    "id": "w8-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w8-04",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w8-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-05",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 8,
+    "accepted": 2,
+    "ticks": 900
+  },
+  {
+    "id": "w8-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-06",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 8,
+    "accepted": 2,
+    "ticks": 900
+  },
+  {
+    "id": "w8-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w8-07",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 200,
+    "accepted": 50,
+    "ticks": 900
+  },
+  {
+    "id": "w8-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 544,
+    "accepted": 136,
+    "ticks": 900
+  },
+  {
+    "id": "w8-08",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 544,
+    "accepted": 136,
+    "ticks": 900
+  },
+  {
+    "id": "w8-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-09",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 16,
+    "accepted": 4,
+    "ticks": 900
+  },
+  {
+    "id": "w8-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w8-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 392,
+    "accepted": 98,
+    "ticks": 900
+  },
+  {
+    "id": "w8-10",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 392,
+    "accepted": 98,
+    "ticks": 900
+  },
+  {
+    "id": "w9-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-01",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 6400,
+    "accepted": 1600,
+    "ticks": 900
+  },
+  {
+    "id": "w9-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-02",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 6400,
+    "accepted": 1600,
+    "ticks": 900
+  },
+  {
+    "id": "w9-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-03",
+    "control": "uniform-23",
+    "solved": false,
+    "used": 5400,
+    "accepted": 1350,
+    "ticks": 900
+  },
+  {
+    "id": "w9-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-04",
+    "control": "uniform-24",
+    "solved": false,
+    "used": 6400,
+    "accepted": 1600,
+    "ticks": 900
+  },
+  {
+    "id": "w9-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-05",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 12800,
+    "accepted": 3200,
+    "ticks": 900
+  },
+  {
+    "id": "w9-05",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 12800,
+    "accepted": 3200,
+    "ticks": 900
+  },
+  {
+    "id": "w9-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-06",
+    "control": "uniform-23",
+    "solved": false,
+    "used": 12800,
+    "accepted": 3200,
+    "ticks": 900
+  },
+  {
+    "id": "w9-06",
+    "control": "uniform-24",
+    "solved": false,
+    "used": 12800,
+    "accepted": 3200,
+    "ticks": 900
+  },
+  {
+    "id": "w9-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 7560,
+    "accepted": 1890,
+    "ticks": 900
+  },
+  {
+    "id": "w9-07",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 7560,
+    "accepted": 1890,
+    "ticks": 900
+  },
+  {
+    "id": "w9-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-08",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 8292,
+    "accepted": 2073,
+    "ticks": 900
+  },
+  {
+    "id": "w9-08",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 8292,
+    "accepted": 2073,
+    "ticks": 900
+  },
+  {
+    "id": "w9-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-09",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 19200,
+    "accepted": 4800,
+    "ticks": 900
+  },
+  {
+    "id": "w9-09",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 19200,
+    "accepted": 4800,
+    "ticks": 900
+  },
+  {
+    "id": "w9-09",
+    "control": "uniform-23",
+    "solved": false,
+    "used": 19200,
+    "accepted": 4800,
+    "ticks": 900
+  },
+  {
+    "id": "w9-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w9-10",
+    "control": "uniform-24",
+    "solved": false,
+    "used": 13504,
+    "accepted": 3376,
+    "ticks": 900
+  },
+  {
+    "id": "w9-10",
+    "control": "uniform-23",
+    "solved": false,
+    "used": 13504,
+    "accepted": 3376,
+    "ticks": 900
+  },
+  {
+    "id": "w9-10",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 13504,
+    "accepted": 3376,
+    "ticks": 900
+  },
+  {
+    "id": "w10-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-01",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 272,
+    "accepted": 68,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-01",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 272,
+    "accepted": 68,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-02",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 352,
+    "accepted": 88,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-02",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 352,
+    "accepted": 88,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-03",
+    "control": "uniform-8",
+    "solved": false,
+    "used": 3264,
+    "accepted": 816,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-04",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 700,
+    "accepted": 175,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-06",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 488,
+    "accepted": 122,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 488,
+    "accepted": 122,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-08",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 100,
+    "accepted": 25,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-08",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 100,
+    "accepted": 25,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-09",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 584,
+    "accepted": 146,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1152,
+    "accepted": 288,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-10",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 1152,
+    "accepted": 288,
+    "ticks": 1800
+  },
+  {
+    "id": "w10-10",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 1152,
+    "accepted": 288,
+    "ticks": 1800
+  },
+  {
+    "id": "w11-01",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-01",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 6256,
+    "accepted": 1564,
+    "ticks": 900
+  },
+  {
+    "id": "w11-01",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 6256,
+    "accepted": 1564,
+    "ticks": 900
+  },
+  {
+    "id": "w11-01",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 6256,
+    "accepted": 1564,
+    "ticks": 900
+  },
+  {
+    "id": "w11-02",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-02",
+    "control": "uniform-5",
+    "solved": false,
+    "used": 5040,
+    "accepted": 1260,
+    "ticks": 900
+  },
+  {
+    "id": "w11-02",
+    "control": "uniform-22",
+    "solved": false,
+    "used": 5040,
+    "accepted": 1260,
+    "ticks": 900
+  },
+  {
+    "id": "w11-02",
+    "control": "uniform-23",
+    "solved": false,
+    "used": 5040,
+    "accepted": 1260,
+    "ticks": 900
+  },
+  {
+    "id": "w11-03",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-03",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 204,
+    "accepted": 51,
+    "ticks": 900
+  },
+  {
+    "id": "w11-03",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 204,
+    "accepted": 51,
+    "ticks": 900
+  },
+  {
+    "id": "w11-03",
+    "control": "uniform-3",
+    "solved": false,
+    "used": 204,
+    "accepted": 51,
+    "ticks": 900
+  },
+  {
+    "id": "w11-04",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-04",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1056,
+    "accepted": 264,
+    "ticks": 900
+  },
+  {
+    "id": "w11-04",
+    "control": "uniform-10",
+    "solved": false,
+    "used": 1056,
+    "accepted": 264,
+    "ticks": 900
+  },
+  {
+    "id": "w11-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-05",
+    "control": "uniform-18",
+    "solved": false,
+    "used": 8964,
+    "accepted": 2241,
+    "ticks": 900
+  },
+  {
+    "id": "w11-05",
+    "control": "uniform-19",
+    "solved": false,
+    "used": 8964,
+    "accepted": 2241,
+    "ticks": 900
+  },
+  {
+    "id": "w11-05",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 8964,
+    "accepted": 2241,
+    "ticks": 900
+  },
+  {
+    "id": "w11-06",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-06",
+    "control": "uniform-15",
+    "solved": false,
+    "used": 768,
+    "accepted": 192,
+    "ticks": 900
+  },
+  {
+    "id": "w11-06",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 768,
+    "accepted": 192,
+    "ticks": 900
+  },
+  {
+    "id": "w11-06",
+    "control": "uniform-7",
+    "solved": false,
+    "used": 768,
+    "accepted": 192,
+    "ticks": 900
+  },
+  {
+    "id": "w11-07",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-07",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 824,
+    "accepted": 206,
+    "ticks": 900
+  },
+  {
+    "id": "w11-07",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 824,
+    "accepted": 206,
+    "ticks": 900
+  },
+  {
+    "id": "w11-08",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-08",
+    "control": "uniform-24",
+    "solved": false,
+    "used": 6728,
+    "accepted": 1682,
+    "ticks": 900
+  },
+  {
+    "id": "w11-08",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 6728,
+    "accepted": 1682,
+    "ticks": 900
+  },
+  {
+    "id": "w11-09",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-09",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 1056,
+    "accepted": 264,
+    "ticks": 900
+  },
+  {
+    "id": "w11-10",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "accepted": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w11-10",
+    "control": "uniform-20",
+    "solved": false,
+    "used": 5540,
+    "accepted": 1385,
+    "ticks": 900
+  },
+  {
+    "id": "w11-10",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 5540,
+    "accepted": 1385,
+    "ticks": 900
+  },
+  {
+    "id": "w11-10",
+    "control": "uniform-31",
+    "solved": false,
+    "used": 5540,
+    "accepted": 1385,
+    "ticks": 900
+  }
+]

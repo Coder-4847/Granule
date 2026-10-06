@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "id": "w7-03",
+  "world": 7,
+  "order": 3,
+  "title": "Chain letter",
+  "lesson": "Start the near charge; pressure reaches the second charge.",
+  "seed": 1703,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [405, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [428, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [450, 164, 8, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 2,
+      "rect": [450, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 6,
+    "efficient": 5,
+    "radius": 12
+  },
+  "work": [[370, 164, 160, 100]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Start the near charge; pressure reaches the second charge.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. chain.",
+    "Reference outline: spark at (427, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [427, 168],
+        "to": [427, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

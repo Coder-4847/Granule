@@ -1,0 +1,17 @@
+{
+  "subpath": "/granule/",
+  "passed": true,
+  "replay": {
+    "recorded": "3c170e45",
+    "first": "3c170e45",
+    "second": "3c170e45",
+    "identical": true,
+    "ticks": 18,
+    "events": 1
+  },
+  "campaign": "100 / 135 brush cells · Efficiency star ≤ 105 · 0.2 / 15 s · Complete ★★★",
+  "worldSlotRoundTrip": true,
+  "devApiAbsent": true,
+  "offlineReload": true,
+  "consoleErrorsOrWarnings": []
+}

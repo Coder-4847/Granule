@@ -1,0 +1,19 @@
+{
+  "cells": 518400,
+  "width": 960,
+  "height": 540,
+  "frames": 7200,
+  "fps": 239.99600006666557,
+  "p50ms": 4.199999999999818,
+  "p95ms": 4.299999999999272,
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 Laptop GPU (0x00002C59) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "lighting": true,
+  "ticksPerFrame": 1,
+  "passed": true,
+  "elapsedSeconds": 30.194,
+  "date": "2026-10-04T08:12:12.126Z",
+  "browser": "154.0.8037.97",
+  "consoleErrorsOrWarnings": [],
+  "representativeMidRangeHardware": false,
+  "note": "This device is not designated representative mid-range hardware; the target hardware gate remains unverified."
+}

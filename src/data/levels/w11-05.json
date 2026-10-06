@@ -1,0 +1,324 @@
+{
+  "version": 1,
+  "id": "w11-05",
+  "world": 11,
+  "order": 5,
+  "title": "Master: ash and iron",
+  "lesson": "All targets must register together. Clear plant fuel, melt metal, and start the explosive chain.",
+  "seed": 2105,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [182, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [188, 164, 4, 16],
+      "material": 18
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 19,
+      "temperature": 20
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [665, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [688, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [710, 164, 8, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Clear the plant plug",
+      "material": 18,
+      "target": 0,
+      "rect": [186, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g1",
+      "label": "molten metal formed: 16 cells",
+      "material": 33,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s2-g2",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 2,
+      "rect": [710, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [18, 19, 31],
+    "tools": [0, 1],
+    "budget": 8965,
+    "efficient": 8405,
+    "radius": 12
+  },
+  "work": [
+    [150, 150, 80, 80],
+    [410, 160, 80, 80],
+    [630, 164, 160, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Clear plant fuel, melt metal, and start the explosive chain.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Reference outline: heat at (190, 172), square radius 10; heat at (450, 200), square radius 10; spark at (687, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 18,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 19,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [687, 168],
+        "to": [687, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

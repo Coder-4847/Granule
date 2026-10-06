@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "id": "w4-07",
+  "world": 4,
+  "order": 7,
+  "title": "Cold ignition",
+  "lesson": "Keep the frozen target cold while igniting the separate fuse.",
+  "seed": 1407,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 4,
+      "temperature": 20
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [572, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [578, 164, 4, 16],
+      "material": 28
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "ice formed: 16 cells",
+      "material": 10,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Clear the fuse plug",
+      "material": 28,
+      "target": 0,
+      "rect": [576, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 28],
+    "tools": [0, 2, 1],
+    "budget": 3240,
+    "efficient": 2520,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [540, 150, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Keep the frozen target cold while igniting the separate fuse.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. freeze → fuse.",
+    "Reference outline: cool at (320, 200), square radius 10; heat at (580, 172), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 172],
+        "to": [580, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 172],
+        "to": [580, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 172],
+        "to": [580, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 172],
+        "to": [580, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [580, 172],
+        "to": [580, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "id": "w4-10",
+  "world": 4,
+  "order": 10,
+  "title": "Phase conductor",
+  "lesson": "Condense vapor, freeze water, and clear a wooden plug.",
+  "seed": 1410,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [160, 170, 60, 60],
+      "material": 1,
+      "temperature": 115
+    },
+    {
+      "rect": [186, 196, 8, 8],
+      "material": 7,
+      "temperature": 115
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 4,
+      "temperature": 20
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [702, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [708, 164, 4, 16],
+      "material": 8
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [184, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "ice formed: 16 cells",
+      "material": 10,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Clear the wood plug",
+      "material": 8,
+      "target": 0,
+      "rect": [706, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [7, 4, 8],
+    "tools": [0, 2, 1],
+    "budget": 3781,
+    "efficient": 2940,
+    "radius": 12
+  },
+  "work": [
+    [150, 160, 80, 80],
+    [410, 160, 80, 80],
+    [670, 150, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Condense vapor, freeze water, and clear a wooden plug.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. condense → freeze → ignite.",
+    "Reference outline: cool at (190, 200), square radius 10; cool at (450, 200), square radius 10; heat at (710, 172), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 7,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 172],
+        "to": [710, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      }
+    ]
+  }
+}

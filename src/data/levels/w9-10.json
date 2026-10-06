@@ -1,0 +1,368 @@
+{
+  "version": 1,
+  "id": "w9-10",
+  "world": 9,
+  "order": 10,
+  "title": "Hot current",
+  "lesson": "Melt volcanic rock, cool lava, and send a signal through the protected conductor.",
+  "seed": 1910,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [160, 170, 60, 60],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [186, 196, 8, 8],
+      "material": 24,
+      "temperature": 20
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 170, 60, 60],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [446, 196, 8, 8],
+      "material": 23,
+      "temperature": 1250
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [650, 180, 140, 4],
+      "material": 19
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "lava formed: 16 cells",
+      "material": 23,
+      "target": 16,
+      "rect": [184, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "obsidian formed: 16 cells",
+      "material": 24,
+      "target": 16,
+      "rect": [444, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Pulse reaches the far contact",
+      "material": -1,
+      "target": 0.3,
+      "rect": [770, 180, 16, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [24, 23, 31],
+    "tools": [0, 1, 2],
+    "budget": 13506,
+    "efficient": 10505,
+    "radius": 12
+  },
+  "work": [
+    [150, 160, 80, 80],
+    [410, 160, 80, 80],
+    [620, 170, 65, 60]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Melt volcanic rock, cool lava, and send a signal through the protected conductor.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. lava → obsidian → circuit.",
+    "Reference outline: heat at (190, 200), square radius 10; cool at (450, 200), square radius 10; spark at (649, 182), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 200],
+        "to": [190, 200],
+        "radius": 10,
+        "material": 24,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 200],
+        "to": [450, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [649, 182],
+        "to": [649, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

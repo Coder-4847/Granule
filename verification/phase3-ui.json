@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "desktop": [
+    1440,
+    1100
+  ],
+  "phone": [
+    390,
+    844
+  ],
+  "consoleErrorsOrWarnings": []
+}

@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "id": "w3-10",
+  "world": 3,
+  "order": 10,
+  "title": "Fire keeper",
+  "lesson": "Manage a fuse, a wooden plug, and an oil receiver from one budget.",
+  "seed": 1310,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [182, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [188, 164, 4, 16],
+      "material": 28
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [442, 160, 16, 4],
+      "material": 1
+    },
+    {
+      "rect": [448, 164, 4, 16],
+      "material": 8
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [734, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [686, 134, 48, 12],
+      "material": 4
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Clear the fuse plug",
+      "material": 28,
+      "target": 0,
+      "rect": [186, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Clear the wood plug",
+      "material": 8,
+      "target": 0,
+      "rect": [446, 162, 8, 22],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Floating oil: 80 cells",
+      "material": 5,
+      "target": 80,
+      "rect": [686, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [28, 8, 5],
+    "tools": [0, 1],
+    "budget": 5535,
+    "efficient": 4305,
+    "radius": 12
+  },
+  "work": [
+    [150, 150, 80, 80],
+    [410, 150, 80, 80],
+    [620, 215, 200, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Manage a fuse, a wooden plug, and an oil receiver from one budget.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. fuse → ignite → oil.",
+    "Reference outline: heat at (190, 172), square radius 10; heat at (450, 172), square radius 10; oil at (710, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [190, 172],
+        "to": [190, 172],
+        "radius": 10,
+        "material": 28,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 172],
+        "to": [450, 172],
+        "radius": 10,
+        "material": 8,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 260],
+        "to": [710, 260],
+        "radius": 5,
+        "material": 5,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

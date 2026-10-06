@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "w4-08",
+  "world": 4,
+  "order": 8,
+  "title": "Meltwater station",
+  "lesson": "Thaw the sample and supply the communicating vessel.",
+  "seed": 1408,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [290, 170, 60, 60],
+      "material": 1,
+      "temperature": -20
+    },
+    {
+      "rect": [316, 196, 8, 8],
+      "material": 10,
+      "temperature": -20
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 130, 68, 4],
+      "material": 1
+    },
+    {
+      "rect": [550, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [614, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [568, 146, 32, 134],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "water formed: 16 cells",
+      "material": 4,
+      "target": 16,
+      "rect": [314, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Water in far column: 60 cells",
+      "material": 4,
+      "target": 60,
+      "rect": [600, 134, 14, 70],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [10, 4],
+    "tools": [0, 1],
+    "budget": 1334,
+    "efficient": 1038,
+    "radius": 12
+  },
+  "work": [
+    [280, 160, 80, 80],
+    [490, 215, 78, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Thaw the sample and supply the communicating vessel.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. melt → columns.",
+    "Reference outline: heat at (320, 200), square radius 10; water at (561, 250), square radius 7. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [320, 200],
+        "to": [320, 200],
+        "radius": 10,
+        "material": 10,
+        "shape": 1,
+        "tool": 1,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [561, 250],
+        "to": [561, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 30,
+        "from": [561, 250],
+        "to": [561, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 60,
+        "from": [561, 250],
+        "to": [561, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

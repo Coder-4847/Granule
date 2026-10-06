@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "id": "w7-09",
+  "world": 7,
+  "order": 9,
+  "title": "Three detonators",
+  "lesson": "Place small ignition sources beside each charge instead of blanketing the room.",
+  "seed": 1709,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [145, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [168, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [405, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [428, 164, 8, 8],
+      "material": 26
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [665, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [688, 164, 8, 8],
+      "material": 27
+    },
+    {
+      "rect": [710, 164, 8, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [165, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [425, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 2,
+      "rect": [710, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 17,
+    "efficient": 13,
+    "radius": 12
+  },
+  "work": [
+    [110, 164, 160, 100],
+    [370, 164, 160, 100],
+    [630, 164, 160, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Place small ignition sources beside each charge instead of blanketing the room.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. blast → powder → chain.",
+    "Reference outline: spark at (167, 168), square radius 1; spark at (427, 168), square radius 1; spark at (687, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [167, 168],
+        "to": [167, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [427, 168],
+        "to": [427, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [687, 168],
+        "to": [687, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

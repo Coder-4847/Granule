@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "id": "w6-10",
+  "world": 6,
+  "order": 10,
+  "title": "Living chemistry",
+  "lesson": "Weather metal, grow plants, and prepare brine without exhausting the supply.",
+  "seed": 1610,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [214, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [162, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [214, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [90, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [306, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [168, 134, 44, 2],
+      "material": 19
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [566, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [448, 134, 4, 8],
+      "material": 18
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [734, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [682, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [734, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [826, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [688, 134, 44, 12],
+      "material": 4
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [94, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [94, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [218, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Rust appears on the metal",
+      "material": 29,
+      "target": 1,
+      "rect": [168, 134, 44, 2],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g4",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [354, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g5",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [354, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g6",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [478, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g7",
+      "label": "Grow beyond 32 starting cells",
+      "material": 18,
+      "target": 36,
+      "rect": [426, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g8",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 15,
+      "target": 8,
+      "rect": [614, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g9",
+      "label": "Keep the left guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [614, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g10",
+      "label": "Keep the right guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [738, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g11",
+      "label": "Brine mixed: 24 cells",
+      "material": 32,
+      "target": 24,
+      "rect": [686, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 15],
+    "tools": [0],
+    "budget": 1275,
+    "efficient": 992,
+    "radius": 12
+  },
+  "work": [
+    [100, 170, 200, 140],
+    [360, 170, 200, 140],
+    [620, 170, 200, 140]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Weather metal, grow plants, and prepare brine without exhausting the supply.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. rust → growth → salt.",
+    "Reference outline: water at (190, 195), square radius 10; water at (450, 195), square radius 10; material at (710, 220), square radius 6. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 195],
+        "to": [190, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 195],
+        "to": [450, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 220],
+        "to": [710, 220],
+        "radius": 6,
+        "material": 15,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

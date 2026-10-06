@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "id": "w11-02",
+  "world": 11,
+  "order": 2,
+  "title": "Master: dark water",
+  "lesson": "All targets must register together. Keep oil, corrosion, and controlled cooling distinct.",
+  "seed": 2102,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [214, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [166, 134, 48, 12],
+      "material": 4
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [566, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [428, 134, 44, 1],
+      "material": 19
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [680, 170, 60, 60],
+      "material": 1,
+      "temperature": 1250
+    },
+    {
+      "rect": [706, 196, 8, 8],
+      "material": 23,
+      "temperature": 1250
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Floating oil: 80 cells",
+      "material": 5,
+      "target": 80,
+      "rect": [166, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s1-g1",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 22,
+      "target": 8,
+      "rect": [354, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g2",
+      "label": "Keep the left guard clear",
+      "material": 22,
+      "target": 8,
+      "rect": [354, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g3",
+      "label": "Keep the right guard clear",
+      "material": 22,
+      "target": 8,
+      "rect": [478, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g4",
+      "label": "Dissolve the metal coupon",
+      "material": 19,
+      "target": 10,
+      "rect": [428, 134, 44, 1],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false
+    },
+    {
+      "id": "s2-g5",
+      "label": "obsidian formed: 16 cells",
+      "material": 24,
+      "target": 16,
+      "rect": [704, 194, 12, 12],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": false
+    }
+  ],
+  "toolkit": {
+    "materials": [5, 22, 23],
+    "tools": [0, 2],
+    "budget": 5041,
+    "efficient": 4725,
+    "radius": 12
+  },
+  "work": [
+    [100, 215, 200, 120],
+    [360, 170, 200, 140],
+    [670, 160, 80, 80]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "All targets must register together. Keep oil, corrosion, and controlled cooling distinct.",
+    "Persistent changes can be prepared first. Time brief electrical pulses and pressure waves so every live target is satisfied at the same sensor check.",
+    "Reference outline: oil at (190, 260), square radius 5; material at (450, 184), square radius 10; cool at (710, 200), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 260],
+        "to": [190, 260],
+        "radius": 5,
+        "material": 5,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 184],
+        "to": [450, 184],
+        "radius": 10,
+        "material": 22,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 200],
+        "to": [710, 200],
+        "radius": 10,
+        "material": 23,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      }
+    ]
+  }
+}

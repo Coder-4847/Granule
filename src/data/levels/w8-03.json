@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "id": "w8-03",
+  "world": 8,
+  "order": 3,
+  "title": "Remote charge",
+  "lesson": "The relay converts an incoming pulse into ignition beside TNT.",
+  "seed": 1803,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [390, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [544, 178, 6, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s0-signal",
+      "rect": [514, 180, 12, 4],
+      "material": 19
+    }
+  ],
+  "machines": [
+    {
+      "id": "s0-relay",
+      "kind": "relay",
+      "rect": [528, 178, 8, 8],
+      "sensor": "s0-signal",
+      "channel": "charge",
+      "threshold": 0.3,
+      "output": [543, 182],
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Relay fires the remote charge",
+      "material": -1,
+      "target": 2,
+      "rect": [540, 174, 24, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 6,
+    "efficient": 5,
+    "radius": 12
+  },
+  "work": [[360, 170, 65, 60]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "The relay converts an incoming pulse into ignition beside TNT.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. relay.",
+    "Reference outline: spark at (389, 182), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [389, 182],
+        "to": [389, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,2988 @@
+[
+  {
+    "id": "w1-01",
+    "title": "First handful",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-02",
+    "title": "Heavy rain",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered gravel: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-03",
+    "title": "Two mouths",
+    "solved": true,
+    "rejected": false,
+    "used": 200,
+    "budget": 270,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Sand receiver A: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Sand receiver B: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-04",
+    "title": "The sieve",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 90,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-05",
+    "title": "Stairwell",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-06",
+    "title": "Side pocket",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-07",
+    "title": "Chisel",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "Release 120 cells of earth",
+        "target": 120,
+        "value": 156,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-08",
+    "title": "Black and gold",
+    "solved": true,
+    "rejected": false,
+    "used": 200,
+    "budget": 270,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered coal: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-09",
+    "title": "Grain exchange",
+    "solved": true,
+    "rejected": false,
+    "used": 300,
+    "budget": 405,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 90,
+        "reached": true
+      },
+      {
+        "label": "Sand receiver A: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Sand receiver B: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w1-10",
+    "title": "The quarry",
+    "solved": true,
+    "rejected": false,
+    "used": 300,
+    "budget": 405,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Delivered gravel: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-01",
+    "title": "A cup of water",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-02",
+    "title": "Light on top",
+    "solved": true,
+    "rejected": false,
+    "used": 100,
+    "budget": 135,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 89,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-03",
+    "title": "Communicating vessels",
+    "solved": true,
+    "rejected": false,
+    "used": 588,
+    "budget": 794,
+    "ticks": 66,
+    "goals": [
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 61,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-04",
+    "title": "Rising latch",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-05",
+    "title": "Separate streams",
+    "solved": true,
+    "rejected": false,
+    "used": 200,
+    "budget": 270,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 90,
+        "reached": true
+      },
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-06",
+    "title": "Water and weight",
+    "solved": true,
+    "rejected": false,
+    "used": 200,
+    "budget": 270,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Delivered gravel: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-07",
+    "title": "Reservoir pair",
+    "solved": true,
+    "rejected": false,
+    "used": 688,
+    "budget": 929,
+    "ticks": 66,
+    "goals": [
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 65,
+        "reached": true
+      },
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-08",
+    "title": "Lift and settle",
+    "solved": true,
+    "rejected": false,
+    "used": 244,
+    "budget": 330,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 95,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-09",
+    "title": "Three states of flow",
+    "solved": true,
+    "rejected": false,
+    "used": 300,
+    "budget": 405,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 90,
+        "reached": true
+      },
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 90,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w2-10",
+    "title": "Waterworks",
+    "solved": true,
+    "rejected": false,
+    "used": 832,
+    "budget": 1124,
+    "ticks": 66,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 67,
+        "reached": true
+      },
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-01",
+    "title": "A warm beginning",
+    "solved": true,
+    "rejected": false,
+    "used": 2000,
+    "budget": 2700,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-02",
+    "title": "Slow match",
+    "solved": true,
+    "rejected": false,
+    "used": 2000,
+    "budget": 2700,
+    "ticks": 102,
+    "goals": [
+      {
+        "label": "Clear the fuse plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-03",
+    "title": "Dry garden",
+    "solved": true,
+    "rejected": false,
+    "used": 2000,
+    "budget": 2700,
+    "ticks": 102,
+    "goals": [
+      {
+        "label": "Clear the plant plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-04",
+    "title": "Keep it wet",
+    "solved": true,
+    "rejected": false,
+    "used": 2100,
+    "budget": 2835,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-05",
+    "title": "Charcoal delivery",
+    "solved": true,
+    "rejected": false,
+    "used": 2100,
+    "budget": 2835,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Delivered coal: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-06",
+    "title": "Double ignition",
+    "solved": true,
+    "rejected": false,
+    "used": 4000,
+    "budget": 5400,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Clear the fuse plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-07",
+    "title": "Garden clearance",
+    "solved": true,
+    "rejected": false,
+    "used": 2100,
+    "budget": 2835,
+    "ticks": 102,
+    "goals": [
+      {
+        "label": "Clear the plant plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-08",
+    "title": "Three small fires",
+    "solved": true,
+    "rejected": false,
+    "used": 6000,
+    "budget": 8101,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Clear the fuse plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Clear the plant plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-09",
+    "title": "Wet boundary",
+    "solved": true,
+    "rejected": false,
+    "used": 4100,
+    "budget": 5535,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Delivered water: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      },
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Clear the plant plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w3-10",
+    "title": "Fire keeper",
+    "solved": true,
+    "rejected": false,
+    "used": 4100,
+    "budget": 5535,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "Clear the fuse plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 91,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-01",
+    "title": "Thaw",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-02",
+    "title": "Still water",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-03",
+    "title": "Vapor lock",
+    "solved": true,
+    "rejected": false,
+    "used": 800,
+    "budget": 1080,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "steam formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-04",
+    "title": "Cloud chamber",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-05",
+    "title": "Load-bearing ice",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 490,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Form a bridge of at least 100 ice cells",
+        "target": 100,
+        "value": 240,
+        "reached": false
+      },
+      {
+        "label": "Support 80 sand cells above the waterline",
+        "target": 80,
+        "value": 94,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w4-06",
+    "title": "Steam cycle",
+    "solved": true,
+    "rejected": false,
+    "used": 1200,
+    "budget": 1620,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "steam formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-07",
+    "title": "Cold ignition",
+    "solved": true,
+    "rejected": false,
+    "used": 2400,
+    "budget": 3240,
+    "ticks": 102,
+    "goals": [
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Clear the fuse plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-08",
+    "title": "Meltwater station",
+    "solved": true,
+    "rejected": false,
+    "used": 988,
+    "budget": 1334,
+    "ticks": 66,
+    "goals": [
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 62,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-09",
+    "title": "Three temperatures",
+    "solved": true,
+    "rejected": false,
+    "used": 1600,
+    "budget": 2160,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "steam formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w4-10",
+    "title": "Phase conductor",
+    "solved": true,
+    "rejected": false,
+    "used": 2800,
+    "budget": 3781,
+    "ticks": 240,
+    "goals": [
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Clear the wood plug",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-01",
+    "title": "The sluice",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-02",
+    "title": "Press fit",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 36,
+    "goals": [
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-03",
+    "title": "Millrace",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-04",
+    "title": "Counterweight",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-05",
+    "title": "Turbine hall",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-06",
+    "title": "Open and press",
+    "solved": true,
+    "rejected": false,
+    "used": 288,
+    "budget": 389,
+    "ticks": 36,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-07",
+    "title": "Mechanical duet",
+    "solved": true,
+    "rejected": false,
+    "used": 288,
+    "budget": 389,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-08",
+    "title": "Float mill",
+    "solved": true,
+    "rejected": false,
+    "used": 288,
+    "budget": 389,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-09",
+    "title": "Three operators",
+    "solved": true,
+    "rejected": false,
+    "used": 432,
+    "budget": 584,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w5-10",
+    "title": "Workshop shift",
+    "solved": true,
+    "rejected": false,
+    "used": 432,
+    "budget": 584,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      },
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-01",
+    "title": "Etch",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Dissolve the metal coupon",
+        "target": 10,
+        "value": 9,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-02",
+    "title": "Salt cellar",
+    "solved": true,
+    "rejected": false,
+    "used": 144,
+    "budget": 195,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Brine mixed: 24 cells",
+        "target": 24,
+        "value": 111,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-03",
+    "title": "Patina",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 30,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Rust appears on the metal",
+        "target": 1,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-04",
+    "title": "Wet earth",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Mud mixed: 12 cells",
+        "target": 12,
+        "value": 34,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-05",
+    "title": "Green reach",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 540,
+    "ticks": 180,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Grow beyond 32 starting cells",
+        "target": 36,
+        "value": 36,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-06",
+    "title": "Wash and weather",
+    "solved": true,
+    "rejected": false,
+    "used": 800,
+    "budget": 1080,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Dissolve the metal coupon",
+        "target": 10,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Rust appears on the metal",
+        "target": 1,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-07",
+    "title": "Garden soil",
+    "solved": true,
+    "rejected": false,
+    "used": 800,
+    "budget": 1080,
+    "ticks": 72,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Mud mixed: 12 cells",
+        "target": 12,
+        "value": 68,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Grow beyond 32 starting cells",
+        "target": 36,
+        "value": 36,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-08",
+    "title": "Saline cold",
+    "solved": true,
+    "rejected": false,
+    "used": 544,
+    "budget": 735,
+    "ticks": 12,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Brine mixed: 24 cells",
+        "target": 24,
+        "value": 110,
+        "reached": true
+      },
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-09",
+    "title": "Three interfaces",
+    "solved": true,
+    "rejected": false,
+    "used": 944,
+    "budget": 1275,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Dissolve the metal coupon",
+        "target": 10,
+        "value": 3,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Brine mixed: 24 cells",
+        "target": 24,
+        "value": 132,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Mud mixed: 12 cells",
+        "target": 12,
+        "value": 43,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w6-10",
+    "title": "Living chemistry",
+    "solved": true,
+    "rejected": false,
+    "used": 944,
+    "budget": 1275,
+    "ticks": 84,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Rust appears on the metal",
+        "target": 1,
+        "value": 3,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Grow beyond 32 starting cells",
+        "target": 36,
+        "value": 36,
+        "reached": true
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Brine mixed: 24 cells",
+        "target": 24,
+        "value": 189,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-01",
+    "title": "First spark",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-02",
+    "title": "Powder room",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 109.49815368652344,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-03",
+    "title": "Chain letter",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 42,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-04",
+    "title": "Blast and gate",
+    "solved": true,
+    "rejected": false,
+    "used": 148,
+    "budget": 200,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 200,
+        "reached": true
+      },
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-05",
+    "title": "Demolition pair",
+    "solved": true,
+    "rejected": false,
+    "used": 8,
+    "budget": 11,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 200,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 109.49815368652344,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-06",
+    "title": "After the shock",
+    "solved": true,
+    "rejected": false,
+    "used": 104,
+    "budget": 141,
+    "ticks": 42,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      },
+      {
+        "label": "Delivered sand: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-07",
+    "title": "Cold storage",
+    "solved": true,
+    "rejected": false,
+    "used": 404,
+    "budget": 546,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 109.49815368652344,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-08",
+    "title": "Pressure workshop",
+    "solved": true,
+    "rejected": false,
+    "used": 148,
+    "budget": 200,
+    "ticks": 36,
+    "goals": [
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 100.05985260009766,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-09",
+    "title": "Three detonators",
+    "solved": true,
+    "rejected": false,
+    "used": 12,
+    "budget": 17,
+    "ticks": 42,
+    "goals": [
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 91.67903137207031,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 62.459835052490234,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w7-10",
+    "title": "Controlled release",
+    "solved": true,
+    "rejected": false,
+    "used": 152,
+    "budget": 206,
+    "ticks": 42,
+    "goals": [
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 62.459835052490234,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-01",
+    "title": "Continuity",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-02",
+    "title": "Wet contact",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.1,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-03",
+    "title": "Remote charge",
+    "solved": true,
+    "rejected": false,
+    "used": 4,
+    "budget": 6,
+    "ticks": 132,
+    "goals": [
+      {
+        "label": "Relay fires the remote charge",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-04",
+    "title": "Mill and wire",
+    "solved": true,
+    "rejected": false,
+    "used": 148,
+    "budget": 200,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-05",
+    "title": "Two conductors",
+    "solved": true,
+    "rejected": false,
+    "used": 8,
+    "budget": 11,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.1,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-06",
+    "title": "Signal and pressure",
+    "solved": true,
+    "rejected": false,
+    "used": 8,
+    "budget": 11,
+    "ticks": 132,
+    "goals": [
+      {
+        "label": "Relay fires the remote charge",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 3.651280164718628,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-07",
+    "title": "Current affairs",
+    "solved": true,
+    "rejected": false,
+    "used": 148,
+    "budget": 200,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.1,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-08",
+    "title": "Corroded intentions",
+    "solved": true,
+    "rejected": false,
+    "used": 404,
+    "budget": 546,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Rust appears on the metal",
+        "target": 1,
+        "value": 3,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-09",
+    "title": "Switchboard",
+    "solved": true,
+    "rejected": false,
+    "used": 12,
+    "budget": 17,
+    "ticks": 132,
+    "goals": [
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.1,
+        "value": 1,
+        "reached": true
+      },
+      {
+        "label": "Relay fires the remote charge",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w8-10",
+    "title": "Power station",
+    "solved": true,
+    "rejected": false,
+    "used": 292,
+    "budget": 395,
+    "ticks": 132,
+    "goals": [
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Relay fires the remote charge",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-01",
+    "title": "Glass kiln",
+    "solved": true,
+    "rejected": false,
+    "used": 4800,
+    "budget": 6480,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-02",
+    "title": "Foundry",
+    "solved": true,
+    "rejected": false,
+    "used": 6000,
+    "budget": 8101,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "molten metal formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-03",
+    "title": "Black crust",
+    "solved": true,
+    "rejected": false,
+    "used": 4000,
+    "budget": 5400,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "obsidian formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-04",
+    "title": "Return to the melt",
+    "solved": true,
+    "rejected": false,
+    "used": 6000,
+    "budget": 8101,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "lava formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-05",
+    "title": "Twin furnaces",
+    "solved": true,
+    "rejected": false,
+    "used": 10800,
+    "budget": 14581,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "molten metal formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-06",
+    "title": "Thermal mirror",
+    "solved": true,
+    "rejected": false,
+    "used": 10000,
+    "budget": 13500,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "obsidian formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "lava formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-07",
+    "title": "Steam beside fire",
+    "solved": true,
+    "rejected": false,
+    "used": 5600,
+    "budget": 7561,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "steam formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-08",
+    "title": "Foundry controls",
+    "solved": true,
+    "rejected": false,
+    "used": 6144,
+    "budget": 8295,
+    "ticks": 36,
+    "goals": [
+      {
+        "label": "molten metal formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-09",
+    "title": "Kiln keeper",
+    "solved": true,
+    "rejected": false,
+    "used": 14800,
+    "budget": 19980,
+    "ticks": 6,
+    "goals": [
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "molten metal formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "obsidian formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w9-10",
+    "title": "Hot current",
+    "solved": true,
+    "rejected": false,
+    "used": 10004,
+    "budget": 13506,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "lava formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "obsidian formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-01",
+    "title": "River foundry",
+    "solved": true,
+    "rejected": false,
+    "used": 224,
+    "budget": 274,
+    "ticks": 276,
+    "goals": [
+      {
+        "label": "Supply 120 water cells to the mill",
+        "target": 120,
+        "value": 144,
+        "reached": true
+      },
+      {
+        "label": "Trigger the remote charge",
+        "target": 2,
+        "value": 113.7247085571289,
+        "reached": true
+      },
+      {
+        "label": "Quench at least 30 cells of lava",
+        "target": 30,
+        "value": 32,
+        "reached": true
+      },
+      {
+        "label": "Deliver 200 remaining water cells",
+        "target": 200,
+        "value": 697,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-02",
+    "title": "Garden engine",
+    "solved": true,
+    "rejected": false,
+    "used": 288,
+    "budget": 352,
+    "ticks": 72,
+    "goals": [
+      {
+        "label": "Raise the wet float",
+        "target": 120,
+        "value": 144,
+        "reached": true
+      },
+      {
+        "label": "Load the counterweight",
+        "target": 120,
+        "value": 144,
+        "reached": true
+      },
+      {
+        "label": "Irrigate the soil: 60 mud cells",
+        "target": 60,
+        "value": 60,
+        "reached": true
+      },
+      {
+        "label": "Grow the planted stem beyond 96 cells",
+        "target": 104,
+        "value": 107,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-03",
+    "title": "Salt and smoke",
+    "solved": true,
+    "rejected": false,
+    "used": 2880,
+    "budget": 3514,
+    "ticks": 294,
+    "goals": [
+      {
+        "label": "Mix 100 brine cells below the burned valve",
+        "target": 100,
+        "value": 648,
+        "reached": true
+      },
+      {
+        "label": "Remove the wooden salt valve",
+        "target": 0,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Deliver 600 protected sand cells",
+        "target": 600,
+        "value": 960,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-04",
+    "title": "Cold demolition",
+    "solved": true,
+    "rejected": false,
+    "used": 480,
+    "budget": 586,
+    "ticks": 294,
+    "goals": [
+      {
+        "label": "Close the ice switch: 32 ice cells",
+        "target": 32,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Fire the remote lock",
+        "target": 2,
+        "value": 140.8148651123047,
+        "reached": true
+      },
+      {
+        "label": "Float 600 oil cells on the receiving water",
+        "target": 600,
+        "value": 960,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-05",
+    "title": "Obsidian mill",
+    "solved": true,
+    "rejected": false,
+    "used": 576,
+    "budget": 703,
+    "ticks": 210,
+    "goals": [
+      {
+        "label": "Form 40 obsidian cells",
+        "target": 40,
+        "value": 44,
+        "reached": true
+      },
+      {
+        "label": "Retain 300 coolant cells",
+        "target": 300,
+        "value": 99,
+        "reached": true
+      },
+      {
+        "label": "Carry turbine current to the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-06",
+    "title": "Etched glass",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 488,
+    "ticks": 300,
+    "goals": [
+      {
+        "label": "Keep the spill guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the spill guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Dissolve the 40-cell metal coupon",
+        "target": 4,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Put 400 sand cells on the plate",
+        "target": 400,
+        "value": 720,
+        "reached": true
+      },
+      {
+        "label": "Demolish the remote glass partition",
+        "target": 8,
+        "value": 3,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-07",
+    "title": "Weather station",
+    "solved": true,
+    "rejected": false,
+    "used": 400,
+    "budget": 488,
+    "ticks": 390,
+    "goals": [
+      {
+        "label": "Weather at least 4 metal cells",
+        "target": 4,
+        "value": 15,
+        "reached": true
+      },
+      {
+        "label": "Keep 300 water cells over the weathering plate",
+        "target": 300,
+        "value": 400,
+        "reached": true
+      },
+      {
+        "label": "Thaw the isolated ice block",
+        "target": 10,
+        "value": 6,
+        "reached": true
+      },
+      {
+        "label": "Collect 900 meltwater and reservoir cells",
+        "target": 900,
+        "value": 1818,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-08",
+    "title": "Deep quarry",
+    "solved": true,
+    "rejected": false,
+    "used": 84,
+    "budget": 103,
+    "ticks": 318,
+    "goals": [
+      {
+        "label": "Restore all 64 cells of the missing conductor",
+        "target": 64,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Activate the blast-operated sluice",
+        "target": 2,
+        "value": 140.8148651123047,
+        "reached": true
+      },
+      {
+        "label": "Catch 700 gravel cells",
+        "target": 700,
+        "value": 1040,
+        "reached": true
+      },
+      {
+        "label": "Preserve the 312-cell sand bed",
+        "target": 300,
+        "value": 312,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-09",
+    "title": "Pressure garden",
+    "solved": true,
+    "rejected": false,
+    "used": 480,
+    "budget": 586,
+    "ticks": 846,
+    "goals": [
+      {
+        "label": "Grow beyond the 32-cell starting plant",
+        "target": 40,
+        "value": 99,
+        "reached": true
+      },
+      {
+        "label": "Fire the remote grain lock",
+        "target": 2,
+        "value": 74.84122467041016,
+        "reached": true
+      },
+      {
+        "label": "Deliver 500 grains through the screen",
+        "target": 500,
+        "value": 564,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w10-10",
+    "title": "Granule",
+    "solved": true,
+    "rejected": false,
+    "used": 944,
+    "budget": 1152,
+    "ticks": 210,
+    "goals": [
+      {
+        "label": "Close the ice interlock",
+        "target": 32,
+        "value": 64,
+        "reached": true
+      },
+      {
+        "label": "Etch the metal interlock",
+        "target": 4,
+        "value": 0,
+        "reached": true
+      },
+      {
+        "label": "Load the sand interlock",
+        "target": 120,
+        "value": 144,
+        "reached": true
+      },
+      {
+        "label": "Fire the final charge through the powered wire",
+        "target": 2,
+        "value": 200,
+        "reached": true
+      }
+    ]
+  },
+  {
+    "id": "w11-01",
+    "title": "Master: fine balance",
+    "solved": true,
+    "rejected": false,
+    "used": 5588,
+    "budget": 6259,
+    "ticks": 66,
+    "goals": [
+      {
+        "label": "Sand receiver A: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": false
+      },
+      {
+        "label": "Sand receiver B: 80 cells",
+        "target": 80,
+        "value": 100,
+        "reached": false
+      },
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 63,
+        "reached": false
+      },
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-02",
+    "title": "Master: dark water",
+    "solved": true,
+    "rejected": false,
+    "used": 4500,
+    "budget": 5041,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "Floating oil: 80 cells",
+        "target": 80,
+        "value": 88,
+        "reached": false
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Dissolve the metal coupon",
+        "target": 10,
+        "value": 3,
+        "reached": false
+      },
+      {
+        "label": "obsidian formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-03",
+    "title": "Master: living current",
+    "solved": true,
+    "rejected": false,
+    "used": 184,
+    "budget": 207,
+    "ticks": 126,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Grow beyond 32 starting cells",
+        "target": 36,
+        "value": 54,
+        "reached": false
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.1,
+        "value": 1,
+        "reached": false
+      },
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-04",
+    "title": "Master: winter mill",
+    "solved": true,
+    "rejected": false,
+    "used": 944,
+    "budget": 1058,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "ice formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": false
+      },
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-05",
+    "title": "Master: ash and iron",
+    "solved": true,
+    "rejected": false,
+    "used": 8004,
+    "budget": 8965,
+    "ticks": 102,
+    "goals": [
+      {
+        "label": "Clear the plant plug",
+        "target": 0,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "molten metal formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 2,
+        "value": 44.147743225097656,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-06",
+    "title": "Master: salt engine",
+    "solved": true,
+    "rejected": false,
+    "used": 688,
+    "budget": 771,
+    "ticks": 90,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Brine mixed: 24 cells",
+        "target": 24,
+        "value": 189,
+        "reached": false
+      },
+      {
+        "label": "Generator sends current",
+        "target": 0.3,
+        "value": 1,
+        "reached": false
+      },
+      {
+        "label": "water formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-07",
+    "title": "Master: two kinds of pressure",
+    "solved": true,
+    "rejected": false,
+    "used": 736,
+    "budget": 825,
+    "ticks": 72,
+    "goals": [
+      {
+        "label": "Water in far column: 60 cells",
+        "target": 60,
+        "value": 70,
+        "reached": false
+      },
+      {
+        "label": "Piston clears the wooden target",
+        "target": 0,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 23.48284149169922,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-08",
+    "title": "Master: volcanic relay",
+    "solved": true,
+    "rejected": false,
+    "used": 6008,
+    "budget": 6729,
+    "ticks": 132,
+    "goals": [
+      {
+        "label": "lava formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      },
+      {
+        "label": "Pulse reaches the far contact",
+        "target": 0.3,
+        "value": 1,
+        "reached": false
+      },
+      {
+        "label": "Relay fires the remote charge",
+        "target": 2,
+        "value": 200,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-09",
+    "title": "Master: quiet workshop",
+    "solved": true,
+    "rejected": false,
+    "used": 944,
+    "budget": 1058,
+    "ticks": 30,
+    "goals": [
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Mud mixed: 12 cells",
+        "target": 12,
+        "value": 51,
+        "reached": false
+      },
+      {
+        "label": "Keep the spill tray clear (maximum 8 cells)",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the left guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Keep the right guard clear",
+        "target": 8,
+        "value": 0,
+        "reached": false
+      },
+      {
+        "label": "Rust appears on the metal",
+        "target": 1,
+        "value": 1,
+        "reached": false
+      },
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": false
+      }
+    ]
+  },
+  {
+    "id": "w11-10",
+    "title": "Master: small causes",
+    "solved": true,
+    "rejected": false,
+    "used": 4948,
+    "budget": 5542,
+    "ticks": 18,
+    "goals": [
+      {
+        "label": "molten glass formed: 16 cells",
+        "target": 16,
+        "value": 64,
+        "reached": false
+      },
+      {
+        "label": "Release sand into the lower receiver",
+        "target": 200,
+        "value": 318,
+        "reached": false
+      },
+      {
+        "label": "Pressure wave reaches the sensor",
+        "target": 3,
+        "value": 189.77516174316406,
+        "reached": false
+      }
+    ]
+  }
+]

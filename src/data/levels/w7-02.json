@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "id": "w7-02",
+  "world": 7,
+  "order": 2,
+  "title": "Powder room",
+  "lesson": "Ignite the contained powder and let the pressure sensor register it.",
+  "seed": 1702,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [405, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [428, 164, 8, 8],
+      "material": 26
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [425, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 6,
+    "efficient": 5,
+    "radius": 12
+  },
+  "work": [[370, 164, 160, 100]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Ignite the contained powder and let the pressure sensor register it.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. powder.",
+    "Reference outline: spark at (427, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [427, 168],
+        "to": [427, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

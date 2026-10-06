@@ -1,0 +1,16 @@
+[
+  {
+    "id": "w4-05",
+    "control": "no-input",
+    "solved": false,
+    "used": 0,
+    "ticks": 900
+  },
+  {
+    "id": "w4-05",
+    "control": "uniform-4",
+    "solved": false,
+    "used": 488,
+    "ticks": 900
+  }
+]

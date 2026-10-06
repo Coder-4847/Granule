@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "id": "w10-10",
+  "world": 10,
+  "order": 10,
+  "title": "Granule",
+  "lesson": "Three independent interlocks protect one reservoir: ice, etched metal, and a sand weight. Open all three to power the final generator and remote charge.",
+  "seed": 2010,
+  "terrain": [
+    {
+      "rect": [90, 320, 52, 52],
+      "material": 1,
+      "temperature": 20
+    },
+    {
+      "rect": [112, 342, 8, 8],
+      "material": 4
+    },
+    {
+      "rect": [246, 296, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [246, 300, 4, 100],
+      "material": 1
+    },
+    {
+      "rect": [290, 300, 4, 100],
+      "material": 1
+    },
+    {
+      "rect": [250, 300, 40, 1],
+      "material": 19
+    },
+    {
+      "rect": [386, 296, 48, 4],
+      "material": 1
+    },
+    {
+      "rect": [386, 300, 4, 100],
+      "material": 1
+    },
+    {
+      "rect": [430, 300, 4, 100],
+      "material": 1
+    },
+    {
+      "rect": [586, 136, 64, 4],
+      "material": 1
+    },
+    {
+      "rect": [586, 140, 4, 300],
+      "material": 1
+    },
+    {
+      "rect": [646, 140, 4, 300],
+      "material": 1
+    },
+    {
+      "rect": [590, 380, 56, 30],
+      "material": 4
+    },
+    {
+      "rect": [688, 152, 150, 4],
+      "material": 19
+    },
+    {
+      "rect": [838, 148, 8, 12],
+      "material": 27
+    }
+  ],
+  "sensors": [
+    {
+      "id": "generator-water",
+      "rect": [590, 140, 56, 120],
+      "material": 4
+    }
+  ],
+  "machines": [
+    {
+      "id": "ice-gate",
+      "kind": "gate",
+      "rect": [590, 372, 56, 8],
+      "sensor": "ice",
+      "threshold": 32,
+      "latch": true
+    },
+    {
+      "id": "acid-gate",
+      "kind": "gate",
+      "rect": [590, 338, 56, 8],
+      "sensor": "acid",
+      "threshold": 4,
+      "latch": true,
+      "comparison": "at-most"
+    },
+    {
+      "id": "weight-gate",
+      "kind": "gate",
+      "rect": [590, 304, 56, 8],
+      "sensor": "weight",
+      "threshold": 120,
+      "latch": true
+    },
+    {
+      "id": "generator",
+      "kind": "wheel",
+      "rect": [662, 144, 16, 16],
+      "sensor": "generator-water",
+      "threshold": 700,
+      "latch": true,
+      "output": [687, 154]
+    }
+  ],
+  "goals": [
+    {
+      "id": "ice",
+      "label": "Close the ice interlock",
+      "rect": [112, 342, 8, 8],
+      "material": 10,
+      "target": 32,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "acid",
+      "label": "Etch the metal interlock",
+      "rect": [250, 300, 40, 1],
+      "material": 19,
+      "target": 4,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": true
+    },
+    {
+      "id": "weight",
+      "label": "Load the sand interlock",
+      "rect": [390, 300, 40, 70],
+      "material": 3,
+      "target": 120,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "final",
+      "label": "Fire the final charge through the powered wire",
+      "rect": [832, 142, 26, 28],
+      "material": -1,
+      "target": 2,
+      "channel": "pressure",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4, 22, 3],
+    "tools": [0, 2],
+    "budget": 1152,
+    "efficient": 992,
+    "radius": 12
+  },
+  "work": [
+    [80, 310, 72, 72],
+    [220, 340, 100, 90],
+    [360, 340, 100, 90]
+  ],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Three independent interlocks protect one reservoir: ice, etched metal, and a sand weight. Open all three to power the final generator and remote charge.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Freeze at (116, 346), square radius 10. Material 22 at (270, 370), square radius 10. Material 3 at (410, 370), square radius 6."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [116, 346],
+        "to": [116, 346],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 2,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [270, 370],
+        "to": [270, 370],
+        "radius": 10,
+        "material": 22,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [410, 370],
+        "to": [410, 370],
+        "radius": 6,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

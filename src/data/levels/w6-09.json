@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "id": "w6-09",
+  "world": 6,
+  "order": 9,
+  "title": "Three interfaces",
+  "lesson": "Each reaction happens where two materials meet.",
+  "seed": 1609,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [162, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [214, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [162, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [214, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [90, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [306, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [168, 134, 44, 1],
+      "material": 19
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [422, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [474, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [422, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [474, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [566, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [428, 134, 44, 12],
+      "material": 4
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [734, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [682, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [734, 200, 4, 50],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [826, 110, 4, 230],
+      "material": 1
+    },
+    {
+      "rect": [688, 134, 44, 4],
+      "material": 13
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 22,
+      "target": 8,
+      "rect": [94, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Keep the left guard clear",
+      "material": 22,
+      "target": 8,
+      "rect": [94, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g2",
+      "label": "Keep the right guard clear",
+      "material": 22,
+      "target": 8,
+      "rect": [218, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s0-g3",
+      "label": "Dissolve the metal coupon",
+      "material": 19,
+      "target": 10,
+      "rect": [168, 134, 44, 1],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g4",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 15,
+      "target": 8,
+      "rect": [354, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g5",
+      "label": "Keep the left guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [354, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g6",
+      "label": "Keep the right guard clear",
+      "material": 15,
+      "target": 8,
+      "rect": [478, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s1-g7",
+      "label": "Brine mixed: 24 cells",
+      "material": 32,
+      "target": 24,
+      "rect": [426, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g8",
+      "label": "Keep the spill tray clear (maximum 8 cells)",
+      "material": 4,
+      "target": 8,
+      "rect": [614, 114, 212, 12],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g9",
+      "label": "Keep the left guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [614, 126, 68, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g10",
+      "label": "Keep the right guard clear",
+      "material": 4,
+      "target": 8,
+      "rect": [738, 126, 88, 210],
+      "comparison": "at-most",
+      "channel": "count",
+      "latch": false,
+      "guard": true
+    },
+    {
+      "id": "s2-g11",
+      "label": "Mud mixed: 12 cells",
+      "material": 14,
+      "target": 12,
+      "rect": [686, 134, 48, 64],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [22, 15, 4],
+    "tools": [0],
+    "budget": 1275,
+    "efficient": 992,
+    "radius": 12
+  },
+  "work": [
+    [100, 170, 200, 140],
+    [360, 170, 200, 140],
+    [620, 170, 200, 140]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Each reaction happens where two materials meet.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. acid → salt → mud.",
+    "Reference outline: material at (190, 184), square radius 10; material at (450, 220), square radius 6; water at (710, 195), square radius 10. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [190, 184],
+        "to": [190, 184],
+        "radius": 10,
+        "material": 22,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [450, 220],
+        "to": [450, 220],
+        "radius": 6,
+        "material": 15,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 195],
+        "to": [710, 195],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "id": "w2-03",
+  "world": 2,
+  "order": 3,
+  "title": "Communicating vessels",
+  "lesson": "Fill the left arm and let pressure carry water into the right.",
+  "seed": 1203,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 130, 68, 4],
+      "material": 1
+    },
+    {
+      "rect": [420, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [484, 134, 4, 146],
+      "material": 1
+    },
+    {
+      "rect": [438, 146, 32, 134],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Water in far column: 60 cells",
+      "material": 4,
+      "target": 60,
+      "rect": [470, 134, 14, 70],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 794,
+    "efficient": 618,
+    "radius": 12
+  },
+  "work": [[360, 215, 78, 120]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Fill the left arm and let pressure carry water into the right.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. columns.",
+    "Reference outline: water at (431, 250), square radius 7. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 30,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 60,
+        "from": [431, 250],
+        "to": [431, 250],
+        "radius": 7,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

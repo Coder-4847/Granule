@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "id": "w8-06",
+  "world": 8,
+  "order": 6,
+  "title": "Signal and pressure",
+  "lesson": "An electrical relay and a direct charge reach different sensors.",
+  "seed": 1806,
+  "terrain": [
+    {
+      "rect": [220, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [260, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [414, 178, 6, 8],
+      "material": 27
+    },
+    {
+      "rect": [480, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [535, 160, 100, 4],
+      "material": 1
+    },
+    {
+      "rect": [558, 164, 8, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s0-signal",
+      "rect": [384, 180, 12, 4],
+      "material": 19
+    }
+  ],
+  "machines": [
+    {
+      "id": "s0-relay",
+      "kind": "relay",
+      "rect": [398, 178, 8, 8],
+      "sensor": "s0-signal",
+      "channel": "charge",
+      "threshold": 0.3,
+      "output": [413, 182],
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Relay fires the remote charge",
+      "material": -1,
+      "target": 2,
+      "rect": [410, 174, 24, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Pressure wave reaches the sensor",
+      "material": -1,
+      "target": 3,
+      "rect": [555, 164, 40, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 11,
+    "efficient": 9,
+    "radius": 12
+  },
+  "work": [
+    [230, 170, 65, 60],
+    [500, 164, 160, 100]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "An electrical relay and a direct charge reach different sensors.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. relay → blast.",
+    "Reference outline: spark at (259, 182), square radius 1; spark at (557, 168), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [259, 182],
+        "to": [259, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [557, 168],
+        "to": [557, 168],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

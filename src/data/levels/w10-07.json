@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "id": "w10-07",
+  "world": 10,
+  "order": 7,
+  "title": "Weather station",
+  "lesson": "Keep the weathering plate wet until rust trips the valve. Warm reservoir water then thaws the isolated ice chamber.",
+  "seed": 2007,
+  "terrain": [
+    {
+      "rect": [206, 216, 52, 4],
+      "material": 1
+    },
+    {
+      "rect": [206, 220, 4, 120],
+      "material": 1
+    },
+    {
+      "rect": [254, 220, 4, 120],
+      "material": 1
+    },
+    {
+      "rect": [210, 220, 44, 2],
+      "material": 19
+    },
+    {
+      "rect": [596, 146, 56, 4],
+      "material": 1,
+      "temperature": 60
+    },
+    {
+      "rect": [596, 150, 4, 250],
+      "material": 1,
+      "temperature": 60
+    },
+    {
+      "rect": [648, 150, 4, 250],
+      "material": 1,
+      "temperature": 60
+    },
+    {
+      "rect": [600, 150, 48, 8],
+      "material": 10,
+      "temperature": -20
+    },
+    {
+      "rect": [600, 320, 48, 30],
+      "material": 4,
+      "temperature": 60
+    }
+  ],
+  "sensors": [],
+  "machines": [
+    {
+      "id": "weather-valve",
+      "kind": "gate",
+      "rect": [600, 314, 48, 6],
+      "sensor": "rust",
+      "threshold": 4,
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "rust",
+      "label": "Weather at least 4 metal cells",
+      "rect": [210, 220, 44, 2],
+      "material": 29,
+      "target": 4,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "wet-plate",
+      "label": "Keep 300 water cells over the weathering plate",
+      "rect": [210, 222, 44, 110],
+      "material": 4,
+      "target": 300,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    },
+    {
+      "id": "thaw",
+      "label": "Thaw the isolated ice block",
+      "rect": [600, 150, 48, 10],
+      "material": 10,
+      "target": 10,
+      "channel": "count",
+      "comparison": "at-most",
+      "latch": true
+    },
+    {
+      "id": "delivered",
+      "label": "Collect 900 meltwater and reservoir cells",
+      "rect": [600, 150, 48, 130],
+      "material": 4,
+      "target": 900,
+      "channel": "count",
+      "comparison": "at-least",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [4],
+    "tools": [0],
+    "budget": 488,
+    "efficient": 420,
+    "radius": 12
+  },
+  "work": [[130, 280, 200, 100]],
+  "timeLimit": 1800,
+  "bonus": {
+    "kind": "time",
+    "limit": 1500
+  },
+  "hints": [
+    "Keep the weathering plate wet until rust trips the valve. Warm reservoir water then thaws the isolated ice chamber.",
+    "Trace the dotted sensor links. The final receiver has no work area: operate the upstream mechanism to reach it.",
+    "Material 4 at (232, 308), square radius 10."
+  ],
+  "solution": {
+    "ticks": 1800,
+    "events": [
+      {
+        "tick": 0,
+        "from": [232, 308],
+        "to": [232, 308],
+        "radius": 10,
+        "material": 4,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

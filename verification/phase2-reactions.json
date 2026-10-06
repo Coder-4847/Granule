@@ -1,0 +1,228 @@
+{
+  "cases": 37,
+  "passed": true,
+  "results": [
+    {
+      "name": "Stone + Acid",
+      "before": 496032,
+      "after": 496962,
+      "passed": true
+    },
+    {
+      "name": "Sand: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Water + Plant",
+      "before": 496032,
+      "after": 496089,
+      "passed": true
+    },
+    {
+      "name": "Water + Lava",
+      "before": 0,
+      "after": 8192,
+      "passed": true
+    },
+    {
+      "name": "Water + Salt",
+      "before": 0,
+      "after": 7759,
+      "passed": true
+    },
+    {
+      "name": "Water: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Water: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Fire: decay",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Steam: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Wood + Acid",
+      "before": 496032,
+      "after": 497831,
+      "passed": true
+    },
+    {
+      "name": "Smoke: decay",
+      "before": 496032,
+      "after": 512416,
+      "passed": true
+    },
+    {
+      "name": "Ice + Salt",
+      "before": 0,
+      "after": 2852,
+      "passed": true
+    },
+    {
+      "name": "Ice + Brine",
+      "before": 0,
+      "after": 617,
+      "passed": true
+    },
+    {
+      "name": "Ice: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Dirt + Water",
+      "before": 0,
+      "after": 3871,
+      "passed": true
+    },
+    {
+      "name": "Mud: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Salt + Water",
+      "before": 0,
+      "after": 7759,
+      "passed": true
+    },
+    {
+      "name": "Salt + Ice",
+      "before": 0,
+      "after": 2852,
+      "passed": true
+    },
+    {
+      "name": "Metal + Water",
+      "before": 0,
+      "after": 37,
+      "passed": true
+    },
+    {
+      "name": "Metal + Acid",
+      "before": 496032,
+      "after": 499328,
+      "passed": true
+    },
+    {
+      "name": "Metal: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Glass: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Snow: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Acid + Stone",
+      "before": 0,
+      "after": 930,
+      "passed": true
+    },
+    {
+      "name": "Acid + Metal",
+      "before": 0,
+      "after": 3296,
+      "passed": true
+    },
+    {
+      "name": "Acid + Wood",
+      "before": 0,
+      "after": 1799,
+      "passed": true
+    },
+    {
+      "name": "Lava + Water",
+      "before": 0,
+      "after": 8192,
+      "passed": true
+    },
+    {
+      "name": "Lava + Brine",
+      "before": 0,
+      "after": 8192,
+      "passed": true
+    },
+    {
+      "name": "Lava: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Obsidian: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Embers: decay",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Foam: decay",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Spark: decay",
+      "before": 496032,
+      "after": 512416,
+      "passed": true
+    },
+    {
+      "name": "Brine: hot transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Brine: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Molten metal: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    },
+    {
+      "name": "Molten glass: cold transition",
+      "before": 0,
+      "after": 16384,
+      "passed": true
+    }
+  ]
+}

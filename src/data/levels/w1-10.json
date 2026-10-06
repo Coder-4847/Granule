@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "w1-10",
+  "world": 1,
+  "order": 10,
+  "title": "The quarry",
+  "lesson": "Supply three separate receivers without spending the whole budget.",
+  "seed": 1110,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [122, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [122, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [174, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [168, 216, 110, 6],
+      "material": 1
+    },
+    {
+      "rect": [100, 248, 38, 6],
+      "material": 1
+    },
+    {
+      "rect": [170, 285, 80, 6],
+      "material": 1
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [477, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [477, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [529, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 130, 56, 4],
+      "material": 1
+    },
+    {
+      "rect": [682, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [734, 134, 4, 66],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Delivered sand: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [126, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Delivered sand: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [481, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Delivered gravel: 80 cells",
+      "material": 12,
+      "target": 80,
+      "rect": [686, 134, 48, 66],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [3, 12],
+    "tools": [0],
+    "budget": 405,
+    "efficient": 315,
+    "radius": 12
+  },
+  "work": [
+    [100, 215, 200, 120],
+    [360, 215, 200, 120],
+    [620, 215, 200, 120]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Supply three separate receivers without spending the whole budget.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. stairs → offset → gravel.",
+    "Reference outline: sand at (150, 270), square radius 5; sand at (505, 260), square radius 5; gravel at (710, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [150, 270],
+        "to": [150, 270],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [505, 260],
+        "to": [505, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [710, 260],
+        "to": [710, 260],
+        "radius": 5,
+        "material": 12,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

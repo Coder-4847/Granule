@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "id": "w8-09",
+  "world": 8,
+  "order": 9,
+  "title": "Switchboard",
+  "lesson": "Three inputs serve a wire, wet bridge, and remote detonator.",
+  "seed": 1809,
+  "terrain": [
+    {
+      "rect": [90, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [130, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [390, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [402, 180, 2, 4],
+      "material": 4
+    },
+    {
+      "rect": [398, 176, 10, 4],
+      "material": 1
+    },
+    {
+      "rect": [398, 184, 10, 4],
+      "material": 1
+    },
+    {
+      "rect": [610, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [650, 180, 140, 4],
+      "material": 19
+    },
+    {
+      "rect": [804, 178, 6, 8],
+      "material": 27
+    }
+  ],
+  "sensors": [
+    {
+      "id": "s2-signal",
+      "rect": [774, 180, 12, 4],
+      "material": 19
+    }
+  ],
+  "machines": [
+    {
+      "id": "s2-relay",
+      "kind": "relay",
+      "rect": [788, 178, 8, 8],
+      "sensor": "s2-signal",
+      "channel": "charge",
+      "threshold": 0.3,
+      "output": [803, 182],
+      "latch": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Pulse reaches the far contact",
+      "material": -1,
+      "target": 0.3,
+      "rect": [250, 180, 16, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    },
+    {
+      "id": "s1-g1",
+      "label": "Pulse reaches the far contact",
+      "material": -1,
+      "target": 0.1,
+      "rect": [510, 180, 16, 4],
+      "comparison": "at-least",
+      "channel": "charge",
+      "latch": true
+    },
+    {
+      "id": "s2-g2",
+      "label": "Relay fires the remote charge",
+      "material": -1,
+      "target": 2,
+      "rect": [800, 174, 24, 24],
+      "comparison": "at-least",
+      "channel": "pressure",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [31],
+    "tools": [0],
+    "budget": 17,
+    "efficient": 13,
+    "radius": 12
+  },
+  "work": [
+    [100, 170, 65, 60],
+    [360, 170, 65, 60],
+    [620, 170, 65, 60]
+  ],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Three inputs serve a wire, wet bridge, and remote detonator.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. circuit → wetwire → relay.",
+    "Reference outline: spark at (129, 182), square radius 1; spark at (389, 182), square radius 1; spark at (649, 182), square radius 1. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [129, 182],
+        "to": [129, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [389, 182],
+        "to": [389, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [649, 182],
+        "to": [649, 182],
+        "radius": 1,
+        "material": 31,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}

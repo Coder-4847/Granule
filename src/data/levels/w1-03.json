@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "id": "w1-03",
+  "world": 1,
+  "order": 3,
+  "title": "Two mouths",
+  "lesson": "Divide a finite supply between two collectors; a single heap cannot reach both.",
+  "seed": 1103,
+  "terrain": [
+    {
+      "rect": [350, 110, 220, 4],
+      "material": 1
+    },
+    {
+      "rect": [385, 130, 40, 4],
+      "material": 1
+    },
+    {
+      "rect": [385, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [421, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [485, 130, 40, 4],
+      "material": 1
+    },
+    {
+      "rect": [485, 134, 4, 66],
+      "material": 1
+    },
+    {
+      "rect": [521, 134, 4, 66],
+      "material": 1
+    }
+  ],
+  "sensors": [],
+  "machines": [],
+  "goals": [
+    {
+      "id": "s0-g0",
+      "label": "Sand receiver A: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [389, 134, 32, 65],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    },
+    {
+      "id": "s0-g1",
+      "label": "Sand receiver B: 80 cells",
+      "material": 3,
+      "target": 80,
+      "rect": [489, 134, 32, 65],
+      "comparison": "at-least",
+      "channel": "count",
+      "latch": true
+    }
+  ],
+  "toolkit": {
+    "materials": [3],
+    "tools": [0],
+    "budget": 270,
+    "efficient": 210,
+    "radius": 12
+  },
+  "work": [[360, 215, 200, 120]],
+  "timeLimit": 900,
+  "bonus": {
+    "kind": "time",
+    "limit": 750
+  },
+  "hints": [
+    "Divide a finite supply between two collectors; a single heap cannot reach both.",
+    "Read each outlined sensor and place inputs near the center of its matching work area. split.",
+    "Reference outline: sand at (405, 260), square radius 5; sand at (505, 260), square radius 5. Thermal samples may need repeated strokes."
+  ],
+  "solution": {
+    "ticks": 900,
+    "events": [
+      {
+        "tick": 0,
+        "from": [405, 260],
+        "to": [405, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      },
+      {
+        "tick": 0,
+        "from": [505, 260],
+        "to": [505, 260],
+        "radius": 5,
+        "material": 3,
+        "shape": 1,
+        "tool": 0,
+        "overwrite": false
+      }
+    ]
+  }
+}
